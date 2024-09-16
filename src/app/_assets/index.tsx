@@ -2,12 +2,12 @@ export { default as DeskangleLogoLight } from "./images/deskangle-logo-light.png
 export { default as DeskangleLogoDark } from "./images/deskangle-logo-dark.png";
 
 // CLIENTS
-export { default as GradelyLogoWhite } from "./images/clients/client-gradely-white.svg";
-export { default as VesicashLogoWhite } from "./images/clients/client-vesicash-white.svg";
-export { default as BudgitLogoWhite } from "./images/clients/client-budgit-white.svg";
-export { default as Class54LogoWhite } from "./images/clients/client-class54-white.svg";
-export { default as PaveLogoWhite } from "./images/clients/client-pave-white.svg";
-export { default as InvictusLogoWhite } from "./images/clients/client-invictus-white.svg";
+// export { default as GradelyLogoWhite } from "./images/clients/client-gradely-white.svg";
+// export { default as VesicashLogoWhite } from "./images/clients/client-vesicash-white.svg";
+// export { default as BudgitLogoWhite } from "./images/clients/client-budgit-white.svg";
+// export { default as Class54LogoWhite } from "./images/clients/client-class54-white.svg";
+// export { default as PaveLogoWhite } from "./images/clients/client-pave-white.svg";
+// export { default as InvictusLogoWhite } from "./images/clients/client-invictus-white.svg";
 
 // CLIENTS COLORS
 export { default as GradelyLogo } from "./images/clients/client-gradely.svg";

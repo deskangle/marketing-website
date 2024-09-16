@@ -54,8 +54,8 @@ const ProcessSection = () => {
       <PairColumnBlock title="Our Process">
         <div className="process-title-text">
           <span className="text-white/45">Collaborative Design Process:</span>{" "}
-          We dive deep into your brand's essence, ideate innovative solutions,
-          and meticulously craft exceptional experiences for success.
+          {`We dive deep into your brand's essence, ideate innovative solutions,
+          and meticulously craft exceptional experiences for success.`}
         </div>
       </PairColumnBlock>
 

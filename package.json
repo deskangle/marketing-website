@@ -24,6 +24,7 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@types/fbemitter": "^2.0.35",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -25,11 +25,11 @@ const IntroSection = () => {
             <div className="copy-block">
               <div className="primary-text">
                 <Image src={FireIcon} alt="fire-icon" width={17} height={17} />
-                <div>3/8 client slots available</div>
+                <div>{`3/8 client slots available`}</div>
               </div>
 
               <div className="secondary-text">
-                We don't chase after quantity, but rather great results
+                {`We don't chase after quantity, but rather great results`}
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ const IntroSection = () => {
               ></source>
 
               <span data-nosnippet="true">
-                Sorry, your browser doesn't support videos.
+                {`Sorry, your browser doesn't support videos.`}
               </span>
             </video>
 

@@ -22,7 +22,7 @@ const VideoSection = () => {
             ></source>
 
             <span data-nosnippet="true">
-              Sorry, your browser doesn't support videos.
+              {`Sorry, your browser doesn't support videos.`}
             </span>
           </video>
         </div>

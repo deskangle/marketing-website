@@ -22,21 +22,21 @@ const HeroSection = () => {
               <div className="check-indicator">
                 <CheckIcon />
               </div>
-              <div>Dedicated team of pro designers & developers</div>
+              <div>{`Dedicated team of pro designers & developers`}</div>
             </div>
 
             {/* HERO HEADLINE */}
             <div className={`hero-headline ${inter.className}`}>
-              Design & Development Solutions for Forward Thinking Brands
+              {`Design & Development Solutions for Forward Thinking Brands`}
             </div>
           </div>
 
           {/* HERO TAGLINE */}
           <div className="hero-tagline">
-            At Deskangle, we believe that every brand has a story that defines
+            {`At Deskangle, we believe that every brand has a story that defines
             who they are and where they're headed. We partner with such brands
             to bring those stories to life through bespoke design, cutting-edge
-            development, and strategic digital marketing.
+            development, and strategic digital marketing.`}
           </div>
 
           {/* ACTION ROW */}
@@ -49,7 +49,7 @@ const HeroSection = () => {
             </button>
 
             <button className="btn btn-primary-green-outline">
-              <div className="text"> Book a Call</div>
+              <div className="text">Book a Call</div>
               <div className="people-row">
                 <div className="people">
                   <Image

@@ -13,7 +13,7 @@ const PricingSlotCard = () => {
       </div>
 
       <div className="secondary-text">
-        We don't chase after quantity, but rather great results
+        {`We don't chase after quantity, but rather great results`}
       </div>
     </div>
   );
