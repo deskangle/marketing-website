@@ -1,0 +1,31 @@
+.why-card {
+  @apply rounded-2xl p-10 shadow-lg border border-white/10 bg-[#202020]/85 flex flex-col justify-start items-center gap-y-7;
+
+  .why-img {
+    @apply w-[62%];
+  }
+
+  .copy-content {
+    @apply w-full;
+
+    .title-text {
+      @apply text-2xl leading-9 uppercase font-semibold text-white/90 mb-9;
+    }
+
+    .highlight-list {
+      @apply flex flex-col justify-start items-start gap-y-6;
+
+      .highlight-row {
+        @apply flex justify-start items-start gap-x-4;
+
+        .check-icon-wrapper {
+          @apply w-[26px] h-[26px] rounded-full bg-primary-green/55 flex justify-center items-center;
+        }
+
+        .highlight-text {
+          @apply text-[15px] text-white/75;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "@/app/_assets/scss/app.scss";
+
+.grid-lines-wrapper {
+  @apply fixed top-0 -z-10 overflow-hidden; // Ensure the grid is fixed and behind all content
+
+  .grid-lines {
+    @apply w-screen h-screen relative;
+
+    &-horizontal {
+      @apply flex justify-between items-center w-full h-full;
+
+      .line-x {
+        @apply relative w-[20%] h-full;
+        border-left: 0.5px solid rgba($black-drop-light, 0.55);
+        border-right: 0.5px solid rgba($black-drop-light, 0.55);
+      }
+    }
+
+    &-vertical {
+      @apply absolute top-0 flex flex-col justify-between items-center w-full h-full;
+
+      .line-y {
+        @apply h-[20%] w-full;
+        border-top: 0.5px solid rgba($black-drop-light, 0.55);
+        border-bottom: 0.5px solid rgba($black-drop-light, 0.55);
+      }
+    }
+  }
+
+  // Light ray effect for horizontal and vertical lines
+  .light-ray {
+    @apply absolute bg-white; // Light ray color
+    width: 2px; // Adjust the size of the light ray
+    height: 2px; // Adjust the size of the light ray
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: lightMove 2s linear infinite;
+  }
+
+  @keyframes lightMove {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}

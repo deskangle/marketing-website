@@ -1,0 +1,23 @@
+.service-card {
+  @apply border border-white/10 bg-dark-grey/70 p-8 rounded-lg shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5;
+
+  .service-img {
+    @apply w-[84px] h-[76px] mb-[15px];
+  }
+
+  .service-title {
+    @apply text-[23px] font-bold mb-[6px] text-white/90;
+  }
+
+  .service-description {
+    @apply text-[15.5px] leading-[28px] text-white/50 mb-7;
+  }
+
+  .service-list-title {
+    @apply text-white/65 text-[13px] font-semibold border-b border-b-white/10 pb-3 mb-5 uppercase;
+  }
+
+  .list-items {
+    @apply flex flex-col justify-start items-start gap-y-[14px];
+  }
+}

@@ -1,0 +1,92 @@
+button {
+  @apply w-auto h-auto text-center shadow-[unset] cursor-pointer outline-0 border-0;
+
+  &:focus,
+  &:visited {
+    @apply shadow-[unset] outline-0 border-0;
+  }
+  &:disabled {
+    @apply pointer-events-none cursor-not-allowed select-none;
+  }
+}
+
+.btn {
+  @apply flex text-nowrap justify-center items-center text-[14.65px] uppercase font-medium no-underline bg-transparent shadow-[unset] h-[54px] py-[15px] px-8 transition duration-300 ease-in-out rounded-full relative text-center max-w-[100%] cursor-pointer border-0;
+
+  &:hover,
+  &:focus {
+    @apply no-underline shadow-[unset] outline-0 border-0;
+
+    .no-touch & {
+      @apply shadow-[unset] outline-0 border-0;
+    }
+  }
+
+  .btn-text {
+    @apply relative -ml-6;
+  }
+
+  .btn-icon {
+    @apply absolute rounded-full w-[42px] h-[42px] bg-black-drop flex justify-center items-center top-1/2 right-2 -translate-y-1/2 z-10;
+  }
+}
+
+// ===========================
+// BUTTON COLORS VARIANTS
+// ===========================
+.btn-primary {
+  background-color: lighten($dark-grey, 2%) !important;
+  border: 0.45px solid rgba($white, 0.18) !important;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($dark-grey, 5%) !important;
+    color: $white;
+  }
+
+  &-outline {
+    background-color: transparent !important;
+    border: 1.5px solid $black-drop;
+    color: $black-drop;
+
+    &:hover {
+      border: 1.5px solid lighten($primary-green, 5%);
+      background-color: lighten($primary-green, 5%) !important;
+      color: $black-drop;
+    }
+  }
+}
+
+.btn-secondary {
+  background-color: $white !important;
+  color: $black-drop;
+
+  &:hover {
+    background-color: $primary-green !important;
+    color: $black-drop;
+  }
+}
+
+.btn-primary-green {
+  background-color: lighten($primary-green, 2%);
+  border: 1px solid lighten($primary-green, 2%);
+  color: darken($black-drop, 8%);
+
+  &:hover {
+    background-color: $white;
+    color: $black-drop;
+  }
+}
+
+.btn-primary-green-outline {
+  background-color: $black-drop;
+  border: 1px solid lighten($primary-green, 20%);
+  color: $white;
+
+  &:hover {
+    // background-color: lighten($primary-green, 2%);
+    border: 1px solid $dark-grey;
+    background-color: $white;
+    color: $black-drop;
+  }
+}

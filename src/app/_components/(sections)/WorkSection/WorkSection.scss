@@ -1,0 +1,27 @@
+.work-section {
+  @apply mb-60;
+
+  .top-header-row {
+    @apply flex flex-col justify-center items-center gap-y-6 mb-24;
+
+    .primary-text {
+      @apply text-center text-[64px] text-white/95 font-bold;
+    }
+
+    .secondary-text {
+      @apply text-center text-white/55 text-2xl leading-[48px];
+    }
+  }
+
+  .work-items {
+    @apply grid grid-cols-2 grid-flow-col gap-10 mx-auto w-[90%];
+
+    .work-column {
+      @apply flex flex-col justify-start items-center gap-10;
+    }
+
+    .work-column--bottom {
+      @apply relative top-[70px];
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.service-section {
+  @apply mb-48;
+
+  .top-header-row {
+    @apply flex flex-col justify-center items-center gap-y-6 mb-24;
+
+    .primary-text {
+      @apply text-center text-[64px] text-white/95 font-bold;
+    }
+
+    .secondary-text {
+      @apply text-center text-white/55 text-2xl leading-[48px];
+    }
+  }
+
+  .card-item-row {
+    @apply grid grid-cols-3 grid-flow-col gap-[15px];
+  }
+}

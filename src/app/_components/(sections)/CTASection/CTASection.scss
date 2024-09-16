@@ -1,0 +1,63 @@
+.cta-section {
+  @apply mb-40;
+
+  .top-header-row {
+    @apply flex flex-col justify-center items-center gap-y-6 mb-24;
+
+    .primary-text {
+      @apply text-center text-[64px] text-white/95 font-bold;
+    }
+
+    .secondary-text {
+      @apply text-center text-white/55 text-2xl leading-[48px];
+    }
+  }
+
+  .card-items {
+    @apply flex justify-center items-start gap-x-9 mx-auto w-auto mb-24;
+
+    .card-item {
+      @apply relative rounded-3xl overflow-hidden w-[390px] h-[360px] bg-black-drop-light/40 transition-all duration-300 ease-in-out backdrop-blur-md border border-white/10 cursor-pointer;
+
+      .top-area {
+        @apply h-[70%];
+      }
+
+      .base-area {
+        @apply relative h-[30%] bottom-0 left-0 w-full py-6 px-8 flex justify-between items-center;
+
+        .text {
+          @apply text-3xl text-black-drop;
+        }
+
+        .btn-icon {
+          @apply relative size-14 min-w-14 min-h-14 rounded-full flex justify-center items-center;
+        }
+      }
+
+      &-one {
+        .base-area {
+          @apply bg-primary-green;
+
+          .btn-icon {
+            @apply bg-black-drop text-white;
+          }
+        }
+      }
+
+      &-two {
+        .base-area {
+          @apply bg-white/80;
+
+          .btn-icon {
+            @apply bg-white text-black-drop;
+          }
+        }
+      }
+    }
+  }
+
+  .copy-text {
+    @apply text-white/70 text-xl leading-9 w-3/5 mx-auto text-center;
+  }
+}

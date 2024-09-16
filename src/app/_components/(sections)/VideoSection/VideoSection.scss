@@ -1,0 +1,11 @@
+.video-section {
+  @apply relative;
+
+  .video-wrapper {
+    @apply relative mx-auto w-full overflow-hidden h-[85vh] rounded-[40px];
+
+    video {
+      @apply h-full w-full object-fill;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.pair-column-block {
+  .pair-wrapper {
+    @apply flex justify-start items-start;
+
+    .title-block {
+      @apply w-[3.5%] relative top-4 rotate-90 text-nowrap text-base uppercase text-white/55;
+    }
+
+    .content-block {
+      @apply w-[96.5%] pb-2 border-l-[0.25px] border-l-white/30;
+    }
+  }
+}

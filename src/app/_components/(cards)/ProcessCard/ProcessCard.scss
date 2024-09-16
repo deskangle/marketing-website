@@ -1,0 +1,43 @@
+.process-card {
+  @apply border border-white/10 bg-dark-grey/70 p-8 rounded-lg shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5;
+
+  .process-title-row {
+    @apply flex justify-start items-center gap-x-2 text-2xl mb-8;
+
+    .process-counter {
+      @apply text-white/40;
+    }
+
+    .separator-line {
+      @apply w-[30px] h-[1px] bg-white/30;
+    }
+
+    .process-title {
+      @apply text-white/90 font-medium text-[22px];
+    }
+  }
+
+  .process-description {
+    @apply text-[15px] leading-[24px] text-white/55 mb-7;
+  }
+
+  .process-highlights {
+    @apply flex flex-col gap-y-4;
+
+    .highlight {
+      @apply flex justify-start items-center gap-x-[10px];
+
+      &-indicator {
+        @apply w-[24px] h-[24px] rounded-full bg-primary-green/55 flex justify-center items-center;
+      }
+
+      &-text {
+        @apply text-[13px] uppercase text-white/65;
+      }
+    }
+  }
+
+  .btn {
+    @apply mt-[40px] w-[62%];
+  }
+}

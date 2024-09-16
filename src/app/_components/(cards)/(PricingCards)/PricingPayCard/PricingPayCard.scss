@@ -1,0 +1,41 @@
+@import "../../../../_assets/scss/colors";
+
+.pricing-pay-card {
+  @apply relative w-full h-auto bg-primary-green p-7 rounded-2xl;
+
+  .form-area {
+  }
+
+  .form-payment {
+    @apply flex flex-col gap-y-6;
+
+    .amount-top {
+      @apply flex justify-start items-end gap-x-2 text-black-drop;
+
+      .amount {
+        @apply font-medium text-5xl;
+      }
+
+      .meta {
+        @apply text-base;
+      }
+    }
+
+    .btn {
+      @apply w-3/4 py-[16px];
+
+      &:hover {
+        background-color: $black-drop !important;
+        color: $white;
+
+        .btn-icon {
+          @apply bg-white;
+
+          svg {
+            color: $black-drop !important;
+          }
+        }
+      }
+    }
+  }
+}

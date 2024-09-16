@@ -1,0 +1,27 @@
+.why-section {
+  @apply mb-[184px] bg-primary-green/5 text-white py-44;
+
+  .content-section-block {
+    @apply flex justify-between items-start;
+
+    .copy-area {
+      @apply w-[46%] sticky top-48;
+
+      .primary-text {
+        @apply text-[66px] leading-[78px] text-white/95 font-semibold mb-9;
+      }
+
+      .secondary-text {
+        @apply text-white/70 text-[17px] leading-8 mb-14;
+      }
+
+      .btn {
+        @apply w-[280px] h-[58px];
+      }
+    }
+
+    .content-area {
+      @apply w-[38%] flex flex-col gap-y-14;
+    }
+  }
+}

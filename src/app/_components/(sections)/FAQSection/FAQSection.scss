@@ -1,0 +1,19 @@
+.faq-section {
+  @apply mb-40;
+
+  .top-header-row {
+    @apply flex flex-col justify-center items-center gap-y-6 mb-24;
+
+    .primary-text {
+      @apply text-center text-[64px] text-white/95 font-bold;
+    }
+
+    .secondary-text {
+      @apply text-center text-white/55 text-2xl leading-[48px];
+    }
+  }
+
+  .faq-list {
+    @apply mx-auto w-3/5 flex flex-col justify-start items-start gap-y-6;
+  }
+}

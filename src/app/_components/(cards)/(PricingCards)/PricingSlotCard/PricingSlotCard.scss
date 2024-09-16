@@ -1,0 +1,19 @@
+.pricing-slot-card {
+  @apply rounded-2xl p-7 bg-white;
+
+  .primary-text {
+    @apply text-black-drop font-medium mb-2 flex justify-start items-center gap-[6px];
+
+    .title {
+      @apply text-[28px] ml-1;
+    }
+
+    .meta {
+      @apply text-base;
+    }
+  }
+
+  .secondary-text {
+    @apply text-black-drop/85 text-[14.25px] leading-[22px];
+  }
+}

@@ -1,0 +1,14 @@
+export { default as HeroSection } from "./HeroSection/HeroSection";
+export { default as ClientSection } from "./ClientSection/ClientSection";
+export { default as IntroSection } from "./IntroSection/IntroSection";
+export { default as VideoSection } from "./VideoSection/VideoSection";
+export { default as MissionSection } from "./MissionSection/MissionSection";
+export { default as StatSection } from "./StatSection/StatSection";
+export { default as ServiceSection } from "./ServiceSection/ServiceSection";
+export { default as WorkSection } from "./WorkSection/WorkSection";
+export { default as CTASection } from "./CTASection/CTASection";
+export { default as ProcessSection } from "./ProcessSection/ProcessSection";
+export { default as PricingSection } from "./PricingSection/PricingSection";
+export { default as WhySection } from "./WhySection/WhySection";
+export { default as FAQSection } from "./FAQSection/FAQSection";
+export { default as TestimonialSection } from "./TestimonialSection/TestimonialSection";

@@ -1,0 +1,15 @@
+.testimonial-section {
+  @apply mt-8 mb-48;
+
+  .testimonial-title-text {
+    @apply text-[54px] leading-[72px] text-white/90 pl-[70px];
+  }
+
+  .testimonial-grid-area {
+    @apply w-[92%] mx-auto mt-28 columns-3 gap-4;
+
+    .testimonial-col {
+      @apply mb-4 break-inside-avoid;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.pricing-plan-card {
+  @apply relative rounded-2xl border border-[#404040]/90 p-6 cursor-pointer transition duration-300 ease-in-out hover:bg-primary-green/5 hover:scale-95;
+
+  .plan-toggler {
+    @apply absolute rounded-full w-4 h-4 border border-[#404040] top-4 right-4;
+  }
+
+  .plan-title {
+    @apply text-white font-medium text-[17px] mb-3;
+  }
+
+  .plan-features {
+    @apply list-disc ml-3;
+
+    .feature {
+      @apply text-sm text-white/50 mb-1 last-of-type:mb-0;
+    }
+  }
+
+  .plan-price {
+    @apply mt-5 bg-[#303030] text-white text-[16.75px] font-medium rounded-full flex justify-center items-center h-9 w-[100px];
+  }
+}
+
+.is-selected {
+  @apply bg-primary-green/10;
+
+  .plan-toggler {
+    @apply bg-white/80;
+  }
+
+  .plan-price {
+    @apply bg-primary-green/80 text-black-drop;
+  }
+}

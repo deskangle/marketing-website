@@ -1,0 +1,9 @@
+// INPUT PLACEHOLDER
+input {
+  @apply placeholder:text-gray-500/80 placeholder:text-base focus:outline-0;
+}
+
+// FORM INPUT STYLING
+.form-control {
+  @apply border border-gray-300 text-base bg-white py-[18px] px-[22px] text-gray-800 transition-all duration-300 ease-in-out rounded-[40px] box-border align-middle relative shadow-[unset] appearance-none overflow-hidden w-full z-10 outline-0 m-0 left-0 top-0;
+}

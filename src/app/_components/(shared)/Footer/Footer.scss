@@ -1,0 +1,79 @@
+footer {
+  @apply bg-black-drop/60;
+
+  .footer-top {
+    @apply pt-20 pb-24 flex justify-between items-start gap-x-8;
+
+    .brand-details-block {
+      @apply w-[36%];
+
+      .brand-slogan {
+        @apply text-base leading-[33px] text-white/90 mt-10 mb-12;
+      }
+
+      .action-btn-row {
+        @apply flex justify-start items-center gap-x-5;
+
+        .btn {
+          @apply w-[206px];
+        }
+      }
+    }
+
+    .page-links-block {
+      @apply relative w-[56%];
+
+      .page-links {
+        @apply flex justify-end items-start gap-7;
+
+        .section-links {
+          @apply flex flex-col justify-start items-start gap-6 w-[30%];
+
+          &.about-links {
+            @apply w-[25%];
+          }
+
+          .link-header {
+            @apply text-white font-semibold text-base pb-3 mb-3 w-full;
+          }
+
+          .nav-item-list {
+            @apply flex flex-col justify-start items-start gap-8;
+
+            .nav-item {
+              @apply relative text-white/90 text-[15.45px] transition-all duration-300 ease-in-out hover:text-primary-green after:absolute after:w-0 after:border-b after:border-b-primary-green after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full;
+
+              &-flex {
+                @apply flex justify-start items-center gap-x-2;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .newsletter-block {
+      @apply w-[40%];
+
+      .newsletter-block-title {
+        @apply text-white font-semibold text-2xl;
+      }
+    }
+  }
+
+  .footer-base {
+    @apply py-14 border-t-[0.5px] border-t-white/15 flex justify-between items-center;
+
+    .base-links {
+      @apply flex justify-start items-start gap-x-6;
+
+      .nav-item {
+        @apply relative text-white/50 text-[15px] font-medium transition-all duration-300 ease-in-out hover:text-primary-green after:absolute after:w-0 after:border-b  after:border-b-primary-green after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full;
+      }
+    }
+
+    .copyright-text {
+      @apply text-white/65 text-[15px] font-medium;
+    }
+  }
+}
