@@ -1,8 +1,8 @@
 .work-card {
-  @apply relative w-full border border-white/15 bg-dark-grey/70 p-8 rounded-lg overflow-hidden shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5 hover:scale-95;
+  @apply relative md:flex-shrink-0 w-full md:w-[380px] xs:w-[290px] border border-white/15 bg-dark-grey/70 p-8 lg:p-6 md:p-5 xs:p-4 rounded-lg overflow-hidden shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5 hover:scale-95 sm:hover:scale-100;
 
   .image-card {
-    @apply relative w-full min-h-[400px] rounded-lg overflow-hidden;
+    @apply relative w-full min-h-[400px] md:min-h-[360px] xs:min-h-[280px] rounded-lg overflow-hidden;
 
     img {
       @apply absolute w-full h-full object-cover;
@@ -13,11 +13,11 @@
     @apply relative mt-5;
 
     .title-text {
-      @apply text-[23px] font-bold mb-[6px] text-white/90;
+      @apply text-[23px] lg:text-xl sm:text-lg xs:text-base font-bold mb-2 text-white/90;
     }
 
     .description-text {
-      @apply text-[15.5px] leading-[26px] text-white/50;
+      @apply text-[15.5px] lg:text-[14.5px] leading-[26px] lg:leading-[24px] text-white/50;
     }
   }
 }

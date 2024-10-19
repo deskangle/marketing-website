@@ -17,12 +17,12 @@ const ServiceSection = () => {
       icon: BrandingServiceIcon,
       title: "Branding",
       description:
-        "We craft a roadmap that aligns with your vision, ensuring every move is purposeful and impactful.",
+        "We craft brand stories that connect with your audience, ensuring all visual elements aligns with business your goals.",
       listTitle: "Branding Services",
       serviceList: [
-        "Market Analysis and Insights",
-        "Goal Setting and Roadmapping",
-        "Innovation Integration",
+        "Market Positioning & Strategy",
+        "Visual Identity Design",
+        "Brand Messaging & Tone of Voice",
       ],
       style: "bg-tint-blue/85 border-tint-blue",
     },
@@ -30,12 +30,12 @@ const ServiceSection = () => {
       icon: ProductServiceIcon,
       title: "Product Design",
       description:
-        "We collaborate with you to understand your unique needs, offering insights, and practical solutions.",
+        "We create innovative designs that prioritize user needs, elevating both experience and engagement.",
       listTitle: "Product Services",
       serviceList: [
-        "Organizational Restructuring",
-        "Process Optimization",
-        "Performance Analysis",
+        "User Experience (UX) Research",
+        "Wireframing & Prototyping",
+        "Design System Development",
       ],
       style: "bg-tint-purple/85 border-tint-purple",
     },
@@ -43,12 +43,12 @@ const ServiceSection = () => {
       icon: DevelopmentServiceIcon,
       title: "Software Development",
       description:
-        "From market entry strategies to partnership development, we act as catalysts for your growth journey.",
+        "We provide development solutions focused on performance, security, and scalability to help businesses grow and adapt.",
       listTitle: "Development Services",
       serviceList: [
-        "Real-time Analytics",
-        "Performance Metrics Tracking",
-        "Risk Management Solutions",
+        "Custom Web & App Development",
+        "API Integration",
+        "Continuous Optimization & Maintenance",
       ],
       style: "bg-tint-green/85 border-tint-green",
     },
@@ -60,6 +60,10 @@ const ServiceSection = () => {
         {/* TOP ROW */}
         <div className="top-header-row">
           <div className="primary-text">All you want, delivered on time</div>
+
+          <div className="primary-text primary-text-mobile">
+            <div>All you want,</div> <div>delivered on time</div>
+          </div>
 
           <div className="secondary-text">
             From business branding and ui/ux design to SaaS platform or mobile

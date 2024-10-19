@@ -1,6 +1,8 @@
 export { default as DeskangleLogoLight } from "./images/deskangle-logo-light.png";
 export { default as DeskangleLogoDark } from "./images/deskangle-logo-dark.png";
 
+export { default as AgencyVideo } from "./videos/agency.webm";
+
 // CLIENTS
 // export { default as GradelyLogoWhite } from "./images/clients/client-gradely-white.svg";
 // export { default as VesicashLogoWhite } from "./images/clients/client-vesicash-white.svg";
@@ -39,3 +41,17 @@ export { default as VideoTestimonialOne } from "./images/testimonials/video-test
 export { default as VideoTestimonialTwo } from "./images/testimonials/video-testimonial-two.jpg";
 
 export { default as WhyImage1 } from "./images/why-image-1.png";
+
+// STATS
+export { default as StatOne } from "./images/stat-one-3.png";
+export { default as StatTwo } from "./images/stat-two-1.png";
+export { default as StatThree } from "./images/stat-three-2.png";
+export { default as StatFour } from "./images/stat-four-2.png";
+
+// AVATAR
+export { default as AvatarOne } from "./images/elvis-avatar.png";
+export { default as AvatarTwo } from "./images/daniel-avatar.png";
+export { default as AvatarThree } from "./images/ehiz-avatar.png";
+
+export { default as PickAPlan } from "./images/pick-a-plan.svg";
+export { default as ContactSales } from "./images/contact-sales.svg";

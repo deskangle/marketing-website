@@ -7,7 +7,7 @@ const ServiceCardItemRow = ({ item }: { item: string }) => {
       <div className="w-[26px] h-[26px] rounded-full bg-primary-green/55 flex justify-center items-center">
         <CheckIcon className="w-[18px] h-[18px] text-white" />
       </div>
-      <div className="text-[15px] text-white/60">{item}</div>
+      <div className="text-[15px] sm:text-[14.5px] text-white/60">{item}</div>
     </div>
   );
 };

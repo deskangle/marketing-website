@@ -11,10 +11,11 @@ interface LightRay {
   duration: number;
 }
 
-const horizontalLines = Array.from({ length: 26 }).fill(null);
-const verticalLines = Array.from({ length: 16 }).fill(null);
+const createLineArray = (length: number) => Array.from({ length }, () => 0);
 
 const GridLines: React.FC = () => {
+  const [horizontalLines, setHorizontalLines] = useState<number[]>([]);
+  const [verticalLines, setVerticalLines] = useState<number[]>([]);
   const [lightRays, setLightRays] = useState<LightRay[]>([]);
 
   useEffect(() => {
@@ -46,6 +47,40 @@ const GridLines: React.FC = () => {
       );
     }, duration * 1000); // Convert seconds to milliseconds
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+
+      if (width <= 440) {
+        setHorizontalLines(createLineArray(8)); // xs
+        setVerticalLines(createLineArray(16));
+      } else if (width <= 639) {
+        setHorizontalLines(createLineArray(15)); // sm
+        setVerticalLines(createLineArray(12));
+      } else if (width <= 768) {
+        setHorizontalLines(createLineArray(14)); // md
+        setVerticalLines(createLineArray(12));
+      } else if (width <= 1023) {
+        setHorizontalLines(createLineArray(14)); // lg
+        setVerticalLines(createLineArray(12));
+      } else if (width <= 1279) {
+        setHorizontalLines(createLineArray(24)); // xl
+        setVerticalLines(createLineArray(15));
+      } else if (width <= 1535) {
+        setHorizontalLines(createLineArray(26)); // 2xl
+        setVerticalLines(createLineArray(16));
+      } else {
+        setHorizontalLines(createLineArray(28)); // larger screens
+        setVerticalLines(createLineArray(18));
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call once to set the initial values
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="grid-lines-wrapper">

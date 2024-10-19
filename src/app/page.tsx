@@ -41,7 +41,7 @@ export default function Home() {
       <TestimonialSection />
 
       {/* WHY SECTION */}
-      <WhySection />
+      {/* <WhySection /> */}
 
       {/* PROCESS SECTION */}
       <ProcessSection />

@@ -33,10 +33,7 @@ const HeroSection = () => {
 
           {/* HERO TAGLINE */}
           <div className="hero-tagline">
-            {`At Deskangle, we believe that every brand has a story that defines
-            who they are and where they're headed. We partner with such brands
-            to bring those stories to life through bespoke design, cutting-edge
-            development, and strategic digital marketing.`}
+            {`At Deskangle, we craft custom digital solutions—combining tailored design, innovative development, and strategic marketing to help our clients succeed in the digital space.`}
           </div>
 
           {/* ACTION ROW */}

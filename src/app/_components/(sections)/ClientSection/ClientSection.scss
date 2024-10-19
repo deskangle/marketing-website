@@ -1,27 +1,102 @@
+@import "../../../_assets/scss/breakpoints.scss";
+
 .client-block {
-  @apply relative mt-10 mb-36 w-full;
+  @apply relative mt-24 mb-36 w-full;
+
+  @include breakpoint-custom-down(920) {
+    @apply mb-24;
+  }
 
   .client-content {
-    @apply flex flex-col justify-start items-center gap-y-[38px];
+    @apply flex justify-center items-start mb-14;
 
     .primary-text {
-      @apply text-white/75 text-sm text-center uppercase mb-4;
+      @apply text-white/75 text-sm md:text-[14.5px] text-center uppercase mb-4 sm:mb-3;
+    }
+  }
+
+  .client-wrapper {
+    @apply relative;
+
+    &::before,
+    &::after {
+      content: "";
+      @apply absolute w-[260px] sm:w-[80px] h-full top-0 z-10;
     }
 
-    .client-row {
-      @apply w-full grid grid-cols-4 grid-flow-col gap-4;
+    &::before {
+      @apply left-0;
+      background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(15, 15, 15, 0.7)
+      );
+    }
+
+    &::after {
+      @apply right-0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), #0f0f0f);
+    }
+  }
+
+  .client-row {
+    @apply flex justify-start items-center gap-5 w-max relative;
+    animation: scroll 15s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    .client-col {
+      @apply flex-shrink-0 w-[260px] sm:w-[230px] h-36 sm:h-32 flex justify-center items-center p-6 bg-black-drop-light/35 rounded-lg backdrop-blur-md border border-white/10 transition-all duration-300 ease-in-out hover:bg-primary-green/5;
+
+      img {
+        @apply w-[145px] xl:w-[124px] md:w-[110px] h-auto opacity-85 transition-all duration-300 ease-in-out;
+      }
+
+      .vesicash {
+        @apply w-[175px] sm:w-[158px];
+      }
+    }
+
+    @include breakpoint-custom-down(920) {
+      @apply flex justify-center items-start gap-6;
 
       .client-row {
-        @apply w-full h-auto flex flex-col justify-start items-start;
+        @apply w-auto;
 
         .client-col {
-          @apply w-full h-36 flex justify-center items-center p-6 bg-black-drop-light/35 rounded-lg backdrop-blur-md border border-white/10 transition-all duration-300 ease-in-out  hover:bg-primary-green/5;
+          @apply h-auto p-4 bg-transparent rounded-none backdrop-blur-none border-none hover:bg-transparent;
 
           img {
-            @apply w-[145px] h-auto opacity-85 transition-all duration-300 ease-in-out;
+            @apply w-[130px];
           }
         }
       }
     }
+
+    @include breakpoint-custom-down(639) {
+      @apply flex-wrap gap-3;
+
+      .client-row {
+        .client-col {
+          @apply p-5;
+
+          img {
+            @apply w-[110px];
+          }
+        }
+      }
+    }
+  }
+}
+
+// Animation for scrolling
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); // Scroll half the width of the row
   }
 }

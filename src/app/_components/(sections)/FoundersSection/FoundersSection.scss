@@ -1,0 +1,17 @@
+@import "../../../_assets/scss/breakpoints.scss";
+
+.avatar-block {
+  @apply mt-36 md:mt-20 sm:mb-3 pl-[70px];
+
+  @include breakpoint-custom-down(840) {
+    @apply md:px-0;
+  }
+
+  .avatar-row {
+    @apply flex justify-start items-center relative;
+  }
+
+  .avatar-title {
+    @apply mt-4 text-[16px] sm:text-[15px] text-white/60 font-medium;
+  }
+}

@@ -5,3 +5,4 @@ export { default as GridLines } from "./GridLines/GridLines";
 export { default as ContactCTA } from "./ContactCTA/ContactCTA";
 export { default as BodyWrapper } from "./BodyWrapper/BodyWrapper";
 export { default as PairColumnBlock } from "./PairColumnBlock/PairColumnBlock";
+export { default as AnimatedTooltip } from "./AnimatedTooltip/AnimatedTooltip";

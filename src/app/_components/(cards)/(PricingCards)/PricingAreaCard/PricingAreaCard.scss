@@ -1,18 +1,18 @@
 .pricing-area-card {
-  @apply rounded-2xl p-12 border border-white/10 bg-[#202020]/85;
+  @apply rounded-2xl p-9 xl:p-7 sm:p-6 xs:p-5 border border-white/10 bg-[#202020]/85;
 
   .top-row {
-    @apply flex justify-between items-start mb-14;
+    @apply flex justify-between items-start sm:flex-wrap mb-14 sm:mb-8;
 
     &--left {
-      @apply w-1/2;
+      @apply w-1/2 sm:w-4/5;
 
       .title-text {
-        @apply text-[28px] leading-[44px] text-white font-medium mb-6;
+        @apply text-[28px] xl:text-[24px] md:text-lg sm:text-[15.5px] leading-[44px] md:leading-8 sm:leading-7 text-white font-medium mb-6;
       }
 
       .action-row {
-        @apply text-white text-[15.5px];
+        @apply text-white text-[15.5px] md:text-[14.5px] sm:text-[13.5px];
 
         span {
           @apply text-white/45;
@@ -25,23 +25,23 @@
     }
 
     &--right {
-      @apply w-1/2 flex justify-end;
+      @apply w-auto flex justify-end sm:mt-8;
     }
   }
 
   .pricing-plans {
-    @apply grid grid-cols-3 grid-flow-col gap-6 mb-10;
+    @apply grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-flow-col md:grid-flow-row gap-5 xl:gap-3 mb-8 sm:mb-3;
   }
 
   .custom-pricing {
-    @apply relative rounded-2xl border border-[#404040]/90 p-9 cursor-pointer transition duration-300 ease-in-out flex flex-col justify-center items-center gap-y-3 hover:bg-primary-green/5 hover:scale-95;
+    @apply relative rounded-2xl border border-[#404040]/90 p-9 xl:p-8 cursor-pointer transition duration-300 ease-in-out flex flex-col justify-center items-center gap-y-3 hover:bg-primary-green/5 hover:scale-[0.98];
 
     .primary-text {
-      @apply text-center font-medium text-[24px] text-white;
+      @apply text-center font-medium text-[24px] xl:text-[20px] sm:text-base text-white;
     }
 
     .secondary-text {
-      @apply text-center text-[16.5px] text-white/50;
+      @apply text-center text-[16.5px] xl:text-[15px] sm:text-[13px] text-white/50;
     }
 
     .btn {

@@ -1,27 +1,53 @@
+@import "../../../_assets/scss/breakpoints.scss";
+
 header {
-  @apply bg-dark-grey fixed top-6 z-20 w-max left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out px-0 py-[10px] rounded-[40px];
+  @apply bg-dark-grey fixed top-6 md:top-4 z-20 w-max left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out px-[14px] py-[10px] rounded-[40px];
   box-shadow: 0 1rem 2.5rem #0000001a;
 
+  @include breakpoint-custom-down(840) {
+    @apply w-[96%] px-4;
+  }
+
   .header-container {
-    @apply flex justify-between items-center gap-x-10 mx-auto transition-all duration-500 ease-in-out;
+    @apply flex w-full justify-between items-center gap-x-10 lg:gap-x-6 mx-auto transition-all duration-500 ease-in-out;
 
     .brand-logo {
-      @apply w-[190px] h-auto pl-[2px];
+      @apply w-[180px] lg:w-[160px] sm:w-[150px] xs:w-[140px] h-auto pl-2;
     }
 
     nav {
-      @apply relative flex justify-end items-center gap-x-2.5;
+      @apply relative flex justify-end items-center gap-x-2.5 lg:gap-x-1;
+
+      @include breakpoint-custom-down(840) {
+        @apply hidden;
+      }
     }
 
     .nav-item {
-      @apply text-[15.25px] px-4 py-[5px] rounded-3xl transition duration-300 ease-in-out text-white/85 font-normal hover:bg-primary-green/25;
+      @apply text-[15.25px] lg:text-[14.5px] px-4 py-[5px] rounded-3xl transition duration-300 ease-in-out text-white/85 font-normal hover:bg-primary-green/25;
 
       &-btn {
-        @apply relative h-[50px] w-[185px];
+        @apply relative h-[50px] lg:h-[46px] w-[180px] lg:w-[160px] text-[14px] lg:text-[13px];
+
+        @include breakpoint-custom-down(840) {
+          @apply hidden;
+        }
       }
 
       &.active-item {
         @apply text-primary-green border-b border-primary-green;
+      }
+    }
+
+    .menu-bar {
+      @apply hidden;
+
+      @include breakpoint-custom-down(840) {
+        display: unset;
+      }
+
+      svg {
+        @apply w-[38px] xs:w-9 h-[38px] xs:h-9 text-white;
       }
     }
   }

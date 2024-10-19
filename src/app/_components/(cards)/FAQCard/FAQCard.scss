@@ -1,19 +1,19 @@
 .faq-item {
-  @apply mx-auto shadow-md w-full bg-black-drop-light/40 rounded-lg p-6 transition-all duration-300 ease-in-out backdrop-blur-md border border-white/10 hover:bg-primary-green/5;
+  @apply mx-auto shadow-md w-full bg-black-drop-light/40 rounded-lg p-6 sm:p-4 transition-all duration-300 ease-in-out backdrop-blur-md border border-white/10 hover:bg-primary-green/5;
 
   .faq-question {
-    @apply flex justify-between items-center cursor-pointer;
+    @apply flex justify-between items-center sm:gap-x-2.5 cursor-pointer;
 
     h3 {
-      @apply text-base font-medium text-white;
+      @apply text-[17px] lg:text-base md:text-[15px] sm:text-[14.5px] xs:text-[14px] font-medium text-white;
     }
 
     .icon {
-      @apply h-6 w-6 text-white;
+      @apply h-6 md:h-5 w-6 md:w-5 text-white;
     }
   }
 
   .faq-answer {
-    @apply mt-5 text-white/65 text-[14.5px] leading-7;
+    @apply mt-5 text-white/65 text-[15.5px] md:text-[15px] sm:text-[14.5px] xs:text-[13.75px] leading-7 xs:leading-6;
   }
 }

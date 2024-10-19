@@ -1,47 +1,65 @@
+@import "../../../_assets/scss/breakpoints.scss";
+
 footer {
   @apply bg-black-drop/60;
 
   .footer-top {
-    @apply pt-20 pb-24 flex justify-between items-start gap-x-8;
+    @apply pt-20 pb-24 flex justify-between items-start gap-8 xl:gap-4;
+
+    @include breakpoint-custom-down(840) {
+      @apply flex flex-col gap-y-24;
+    }
 
     .brand-details-block {
-      @apply w-[36%];
+      @apply w-[36%] xl:w-[39%];
+
+      @include breakpoint-custom-down(840) {
+        @apply w-full;
+      }
+
+      img {
+        @apply w-[200px] xl:w-[180px] h-auto;
+      }
 
       .brand-slogan {
-        @apply text-base leading-[33px] text-white/90 mt-10 mb-12;
+        @apply text-base xl:text-[14.5px] leading-[33px] xl:leading-[30px] text-white/90 mt-10 mb-12;
       }
 
       .action-btn-row {
-        @apply flex justify-start items-center gap-x-5;
+        @apply flex sm:flex-col justify-start items-center gap-5;
 
         .btn {
-          @apply w-[206px];
+          @apply w-[206px] sm:w-full xl:text-[13.75px] sm:text-[13.25px];
         }
       }
     }
 
     .page-links-block {
-      @apply relative w-[56%];
+      @apply relative w-[56%] xl:w-[58%];
+
+      @include breakpoint-custom-down(840) {
+        @apply w-full;
+      }
 
       .page-links {
-        @apply flex justify-end items-start gap-7;
+        @apply flex sm:flex-wrap justify-end xl:justify-start items-start gap-7 xl:gap-3 sm:gap-y-16;
 
         .section-links {
-          @apply flex flex-col justify-start items-start gap-6 w-[30%];
+          @apply flex flex-col justify-start items-start gap-6 w-[30%] xl:w-[28%] sm:w-[48%] xl:gap-4;
 
           &.about-links {
             @apply w-[25%];
           }
 
           .link-header {
-            @apply text-white font-semibold text-base pb-3 mb-3 w-full;
+            @apply text-white font-semibold text-base xl:text-[15px] pb-3 mb-3 w-full;
           }
 
           .nav-item-list {
             @apply flex flex-col justify-start items-start gap-8;
 
             .nav-item {
-              @apply relative text-white/90 text-[15.45px] transition-all duration-300 ease-in-out hover:text-primary-green after:absolute after:w-0 after:border-b after:border-b-primary-green after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full;
+              @apply relative text-white/90 text-[15.45px] xl:text-[14.5px] transition-all duration-300 ease-in-out hover:text-primary-green after:absolute after:w-0 after:border-b after:border-b-primary-green after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full;
 
               &-flex {
                 @apply flex justify-start items-center gap-x-2;
@@ -62,18 +80,18 @@ footer {
   }
 
   .footer-base {
-    @apply py-14 border-t-[0.5px] border-t-white/15 flex justify-between items-center;
+    @apply py-14 border-t-[0.5px] border-t-white/15 flex sm:flex-col justify-between items-center sm:gap-y-6;
 
     .base-links {
       @apply flex justify-start items-start gap-x-6;
 
       .nav-item {
-        @apply relative text-white/50 text-[15px] font-medium transition-all duration-300 ease-in-out hover:text-primary-green after:absolute after:w-0 after:border-b  after:border-b-primary-green after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full;
+        @apply relative text-white/50 text-[15px] xl:text-sm font-medium transition-all duration-300 ease-in-out hover:text-primary-green after:absolute after:w-0 after:border-b  after:border-b-primary-green after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full;
       }
     }
 
     .copyright-text {
-      @apply text-white/65 text-[15px] font-medium;
+      @apply text-white/65 text-[15px] xl:text-sm font-medium;
     }
   }
 }

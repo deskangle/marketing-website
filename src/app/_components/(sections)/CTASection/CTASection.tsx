@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import { PickAPlan, ContactSales } from "@/app/_assets";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import "./CTASection.scss";
 
@@ -12,6 +14,10 @@ const CTASection = () => {
             Use the cheat code to get <br /> started quickly and get results
           </div>
 
+          <div className="primary-text primary-text-mobile">
+            Use the cheat code to get started quickly and get results
+          </div>
+
           <div className="secondary-text">
             Get an almost in-house experience with a dedicated remote team
           </div>
@@ -21,7 +27,9 @@ const CTASection = () => {
         <div className="card-items">
           <div className="card-item card-item-one">
             {/* TOP AREA */}
-            <div className="top-area"></div>
+            <div className="top-area">
+              <Image src={PickAPlan} alt="pick a plan" width={80} height={80} />
+            </div>
 
             {/* BASE AREA */}
             <div className="base-area">
@@ -35,7 +43,14 @@ const CTASection = () => {
 
           <div className="card-item card-item-two">
             {/* TOP AREA */}
-            <div className="top-area"></div>
+            <div className="top-area">
+              <Image
+                src={ContactSales}
+                alt="contact sales"
+                width={80}
+                height={80}
+              />
+            </div>
 
             {/* BASE AREA */}
             <div className="base-area">

@@ -1,19 +1,23 @@
 .service-section {
-  @apply mb-48;
+  @apply mb-48 lg:mb-40 md:mb-28;
 
   .top-header-row {
-    @apply flex flex-col justify-center items-center gap-y-6 mb-24;
+    @apply flex flex-col justify-center items-center gap-y-6 mb-24 sm:mb-20;
 
     .primary-text {
-      @apply text-center text-[64px] text-white/95 font-bold;
+      @apply text-center sm:hidden text-[64px] lg:text-[54px] md:text-[40px] sm:text-[32px] text-white/95 font-bold;
+    }
+
+    .primary-text-mobile {
+      @apply hidden text-nowrap sm:flex sm:flex-col sm:justify-start sm:items-start gap-2 w-full;
     }
 
     .secondary-text {
-      @apply text-center text-white/55 text-2xl leading-[48px];
+      @apply text-center sm:text-left text-white/55 text-2xl lg:text-xl md:text-base sm:text-[15px] leading-[48px] w-full;
     }
   }
 
   .card-item-row {
-    @apply grid grid-cols-3 grid-flow-col gap-[15px];
+    @apply grid grid-cols-3 md:grid-cols-1 md:grid-flow-row grid-flow-col gap-[15px];
   }
 }

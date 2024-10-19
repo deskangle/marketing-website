@@ -6,32 +6,32 @@ const faqs = [
   {
     question: "How long does the branding design process take?",
     answer:
-      "The timeline depends on the scope and revisions. Typically, a full branding package can be delivered within 1-2 weeks.",
+      "The timeline varies based on project complexity and feedback. A typical branding package can be delivered within 1-3 weeks.",
   },
   {
-    question: "What do you need from me to start the branding design?",
+    question: "What do you need from me to begin the branding process?",
     answer:
-      "We require insights into your business goals, target audience, and any existing materials. A brand questionnaire will help guide the process.",
+      "We’ll need details about your business goals, target audience, and any existing brand assets. We’ll also provide a brand questionnaire to gather deeper insights.",
   },
   {
     question: "Do you offer custom software development?",
     answer:
-      "Yes, we specialize in custom software development, including web and mobile applications, tailored to your business needs.",
+      "Yes, we specialize in custom web and mobile applications tailored to meet your business's unique needs.",
   },
   {
-    question: "What if I want changes after the product is developed?",
+    question: "What if I want revisions after the product launch?",
     answer:
-      "We provide post-launch support and flexible revision packages to ensure the product continues to meet your needs.",
+      "We offer post-launch support and revision packages to accommodate any necessary changes or updates as your business evolves.",
   },
   {
-    question: "Can you help with product development and launch strategy?",
+    question: "Can you assist with product development and launch strategies?",
     answer:
-      "Absolutely. We assist with product design, prototyping, and provide go-to-market strategies to ensure a successful launch.",
+      "Absolutely! From product design to prototyping and go-to-market strategies, we collaborate to ensure a smooth and successful launch.",
   },
   {
-    question: "Can you help with product development and launch strategy?",
+    question: "What differentiates your branding services from others?",
     answer:
-      "Yes, our product development services include everything from initial ideation and design to prototyping, development, and go-to-market strategies. We work closely with you to ensure your product's success.",
+      "We focus on creating holistic brand strategies that not only visually appeal but align with your business goals to build long-lasting brand recognition.",
   },
 ];
 
@@ -42,6 +42,11 @@ const FAQSection = () => {
         {/* TOP ROW */}
         <div className="top-header-row">
           <div className="primary-text">Frequently Asked Questions</div>
+
+          <div className="primary-text primary-text-mobile">
+            <div>Frequently</div> <div>Asked Questions</div>
+          </div>
+
           <div className="secondary-text">
             Trusted by brands that value excellence
           </div>

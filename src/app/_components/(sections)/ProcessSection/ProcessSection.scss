@@ -1,15 +1,15 @@
 .process-section {
-  @apply mt-20 mb-40;
+  @apply mt-20 sm:mt-14 mb-40 lg:mb-36 md:mb-[118px];
 
   .process-title-text {
-    @apply text-[54px] leading-[72px] text-white/90 pl-[70px];
+    @apply text-[54px] xl:text-[48px] lg:text-[40px] md:text-[30px] sm:text-[26px] xs:text-[22px] leading-[72px] xl:leading-[68px] lg:leading-[64px] md:leading-[54px] sm:leading-[48px] text-white/90 pl-[70px] xl:pl-[50px] md:pl-0;
   }
 
   .process-flow-section {
-    @apply mt-[120px];
+    @apply mt-[120px] md:mt-[100px] sm:mt-[90px];
 
     .process-block {
-      @apply relative grid grid-rows-2 grid-cols-3 grid-flow-row gap-6;
+      @apply relative grid grid-rows-2 grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-flow-row gap-6;
     }
   }
 }

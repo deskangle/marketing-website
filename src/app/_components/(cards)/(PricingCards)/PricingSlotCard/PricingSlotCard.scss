@@ -1,19 +1,19 @@
 .pricing-slot-card {
-  @apply rounded-2xl p-7 bg-white;
+  @apply rounded-2xl p-7 xl:p-5 bg-white md:hidden;
 
   .primary-text {
-    @apply text-black-drop font-medium mb-2 flex justify-start items-center gap-[6px];
+    @apply text-black-drop font-medium mb-2 flex justify-start items-center gap-[6px] xl:gap-1;
 
     .title {
-      @apply text-[28px] ml-1;
+      @apply text-[28px] xl:text-[22px] ml-1;
     }
 
     .meta {
-      @apply text-base;
+      @apply text-base xl:text-sm;
     }
   }
 
   .secondary-text {
-    @apply text-black-drop/85 text-[14.25px] leading-[22px];
+    @apply text-black-drop/85 text-[14.25px] xl:text-[13px] leading-[22px];
   }
 }

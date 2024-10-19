@@ -12,3 +12,4 @@ export { default as PricingSection } from "./PricingSection/PricingSection";
 export { default as WhySection } from "./WhySection/WhySection";
 export { default as FAQSection } from "./FAQSection/FAQSection";
 export { default as TestimonialSection } from "./TestimonialSection/TestimonialSection";
+export { default as FoundersSection } from "./FoundersSection/FoundersSection";

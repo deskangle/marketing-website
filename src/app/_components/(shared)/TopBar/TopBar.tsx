@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 import { DeskangleLogoLight, DeskangleLogoDark } from "@/app/_assets";
 import "./TopBar.scss";
 
@@ -61,6 +62,11 @@ const TopBar = () => {
         <Link href="/" className="btn btn-primary-green nav-item-btn">
           Get Started
         </Link>
+
+        {/* HAMBURGER MENU */}
+        <div className="menu-bar">
+          <Bars3Icon />
+        </div>
       </div>
     </header>
   );

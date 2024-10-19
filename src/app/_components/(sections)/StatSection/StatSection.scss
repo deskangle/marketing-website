@@ -1,14 +1,18 @@
 .stat-section {
-  @apply relative mb-44;
+  @apply relative mb-44 lg:mb-40 md:mb-32;
 
   .stat-row {
-    @apply grid grid-cols-4 gap-4;
+    @apply grid grid-cols-4 gap-4 lg:flex lg:flex-nowrap lg:justify-start lg:items-start lg:gap-x-4 lg:overflow-auto;
 
     .stat-card {
-      @apply w-full h-44 bg-black-drop-light/40 rounded-lg p-6 flex flex-col justify-between items-start transition-all duration-300 ease-in-out backdrop-blur-md border border-white/10 hover:bg-primary-green/5;
+      @apply w-full lg:w-[260px] md:w-[240px] h-[380px] lg:h-[360px] md:h-[340px] bg-black-drop-light/40 rounded-lg p-6 sm:p-5 flex lg:flex-shrink-0 flex-col justify-between items-start transition-all duration-300 ease-in-out backdrop-blur-md border border-white/10 hover:bg-primary-green/5;
+
+      img {
+        @apply xl:w-[110px] xl:h-auto;
+      }
 
       .stat-header {
-        @apply relative -top-0.5 text-primary-green/70 font-bold text-4xl;
+        @apply relative -top-0.5 text-primary-green/95 font-bold text-4xl xl:text-3xl mb-2;
       }
 
       .stat-primary-text {
@@ -16,7 +20,7 @@
       }
 
       .stat-secondary-text {
-        @apply text-white/50 text-[13.5px] leading-[22px];
+        @apply text-white/60 text-[13px] leading-[22px];
       }
     }
   }

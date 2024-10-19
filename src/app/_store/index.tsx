@@ -19,39 +19,68 @@ export const useAppStore = create<Store>((set, get) => ({
   selectedPeriod: "monthly",
   selectedPricing: {
     type: "Starter",
+    description:
+      "Ideal for startups or small businesses looking for ongoing support to keep their digital assets in top shape. This plan ensures your product remains functional, secure, and up-to-date.",
     features: ["One request at a time"],
     isSelected: true,
     pricePeriod: {
-      monthly: { amount: 1200, localAmount: 300000 },
-      quarterly: { amount: 3200, localAmount: 800000 },
+      monthly: { amount: 800, localAmount: 500 },
+      quarterly: { amount: 2280, localAmount: 1425 },
     },
   },
   pricingList: [
     {
       type: "Starter",
-      features: ["One request at a time"],
+      description:
+        "Ideal for small businesses to keep your product up-to-date.",
+      features: [
+        "One request update per time",
+        "Basic monthly maintenance",
+        "Monthly SEO audit ",
+        "Regular backups and recovery",
+        "Support response within 24hrs",
+      ],
       isSelected: true,
       pricePeriod: {
-        monthly: { amount: 1200, localAmount: 300000 },
-        quarterly: { amount: 3200, localAmount: 800000 },
+        monthly: { amount: 800, localAmount: 500 },
+        quarterly: { amount: 2280, localAmount: 1425 },
       },
     },
     {
       type: "Growth",
-      features: ["Two request at a time"],
+      description:
+        "Perfect for scaling businesses and driving continuous growth.",
+      features: [
+        "Everything in the Starter Plan",
+        "Two request update per time",
+        "SEO strategy optimization",
+        "Quarterly UX/UI audits",
+        "Analytics insight reports",
+        "Support response within 12hrs",
+      ],
       isSelected: false,
       pricePeriod: {
-        monthly: { amount: 2400, localAmount: 600000 },
-        quarterly: { amount: 7000, localAmount: 1650000 },
+        monthly: { amount: 2400, localAmount: 1200 },
+        quarterly: { amount: 6840, localAmount: 3420 },
       },
     },
     {
       type: "Business",
-      features: ["Three request at a time"],
+      description:
+        "Designed for industry leaders, offering an end to end support.",
+      features: [
+        "Everything in the Growth Plan",
+        "Ongoing custom features",
+        "Continuous UX/UI enhancements",
+        "Bi-weekly update reviews",
+        "Full digital marketing integration",
+        "Dedicated account manager",
+        "Priority support within 4hrs",
+      ],
       isSelected: false,
       pricePeriod: {
-        monthly: { amount: 4800, localAmount: 1200000 },
-        quarterly: { amount: 14000, localAmount: 3400000 },
+        monthly: { amount: 4400, localAmount: 2000 },
+        quarterly: { amount: 12540, localAmount: 5700 },
       },
     },
   ],

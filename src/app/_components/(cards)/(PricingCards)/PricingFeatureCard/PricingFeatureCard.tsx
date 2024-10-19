@@ -3,6 +3,16 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 import { PricingPayCard } from "@/app/_components";
 import "./PricingFeatureCard.scss";
 
+const featureList = [
+  "Access to Dedicated Support",
+  "Regular Security Monitoring",
+  "Monthly Performance Reports",
+  "Bug Fixes and Minor Updates",
+  "Basic SEO Maintenance",
+  "Cross-Browser Testing",
+  "Uptime Monitoring",
+];
+
 const PricingFeatureCard = () => {
   return (
     <div className="pricing-feature-wrapper">
@@ -12,37 +22,15 @@ const PricingFeatureCard = () => {
         </div>
 
         <div className="feature-list">
-          <div className="feature">
-            <div className="marker">
-              <CheckIcon className="w-4 h-4 text-black-drop" />
+          {featureList.map((feature, index) => (
+            <div key={index} className="feature">
+              <div className="marker">
+                <CheckIcon className="w-4 h-4 text-black-drop" />
+              </div>
+
+              <div className="feature-text">{feature}</div>
             </div>
-
-            <div className="feature-text">2-3 business days delivery time</div>
-          </div>
-
-          <div className="feature">
-            <div className="marker">
-              <CheckIcon className="w-4 h-4 text-black-drop" />
-            </div>
-
-            <div className="feature-text">Whole team input</div>
-          </div>
-
-          <div className="feature">
-            <div className="marker">
-              <CheckIcon className="w-4 h-4 text-black-drop" />
-            </div>
-
-            <div className="feature-text">Unlimited brands</div>
-          </div>
-
-          <div className="feature">
-            <div className="marker">
-              <CheckIcon className="w-4 h-4 text-black-drop" />
-            </div>
-
-            <div className="feature-text">Unlimited revisions</div>
-          </div>
+          ))}
         </div>
       </div>
 

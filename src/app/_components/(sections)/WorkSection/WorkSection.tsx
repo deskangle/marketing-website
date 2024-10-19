@@ -16,43 +16,38 @@ const WorkSection = () => {
     {
       image: ProjectSix,
       brand: "BudgitUs",
-      description:
-        "Vesicash, a dynamic FinTech startup, has been on a mission to revolutionize online financial transactions.",
+      description: "Budgit, a dynamic data based startup",
       link: "https://vesicash.com",
     },
     {
       image: ProjectFive,
       brand: "Glaxe",
       description:
-        "Pave is a transformative Ed-Tech platform with a bold mission: to empower international higher education and career mobility for African students.",
+        "Pave is a transformative Ed-Tech platform with a bold mission",
       link: "https://pavehq.com",
     },
     {
       image: ProjectFour,
       brand: "Vesicash Escrow & MoR",
-      description:
-        "Vesicash, a dynamic FinTech startup, has been on a mission to revolutionize online financial transactions.",
+      description: "Vesicash, a dynamic FinTech startup",
       link: "https://vesicash.com",
     },
     {
       image: ProjectThree,
       brand: "PaveHQ",
-      description:
-        "Pave is a transformative Ed-Tech platform with a bold mission: to empower international higher education and career mobility for African students.",
+      description: "Pave is a transformative Ed-Tech platform",
       link: "https://pavehq.com",
     },
     {
       image: ProjectTwo,
       brand: "Class54 Education",
-      description:
-        "Class54 is an innovative Ed-Tech startup dedicated to transforming the landscape of exam preparation.",
+      description: "Class54 is an innovative Ed-Tech startup.",
       link: "https://class54.com",
     },
     {
       image: ProjectOne,
       brand: "Gradely LMS",
-      description:
-        "Gradely is a pioneering digital education startup dedicated to transforming the educational experience for students, parents, and K-12 schools.",
+      description: "Gradely is a pioneering digital education startup",
       link: "https://gradely.co",
     },
   ];
@@ -70,9 +65,14 @@ const WorkSection = () => {
       <div className="app-container">
         {/* TOP ROW */}
         <div className="top-header-row">
-          <div className="primary-text">Let our work do the talking</div>
+          <div className="primary-text">Our Work Transforms Brands</div>
+
+          <div className="primary-text primary-text-mobile">
+            <div>Our Work</div> <div>Transforms Brands</div>
+          </div>
+
           <div className="secondary-text">
-            Trusted by brands that value excellence
+            Partnered with brands pushing boundaries and setting new standards
           </div>
         </div>
 
@@ -90,6 +90,20 @@ const WorkSection = () => {
             ))}
           </div>
 
+          <div className="work-column work-column--bottom md:!hidden">
+            {getOddNumberedWorks().map((work: IWorkType, index: number) => (
+              <WorkCard
+                key={index}
+                image={work.image}
+                brand={work.brand}
+                description={work.description}
+                link={work.link}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="work-items !hidden md:!flex md:mt-5">
           <div className="work-column work-column--bottom">
             {getOddNumberedWorks().map((work: IWorkType, index: number) => (
               <WorkCard

@@ -30,6 +30,8 @@ const PricingPlanCard = ({
 
       <div className="plan-title">{pricing.type}</div>
 
+      <div className="plan-description">{pricing.description}</div>
+
       <ul className="plan-features">
         {pricing.features.map((feature: string, index: number) => (
           <li className="feature" key={index}>

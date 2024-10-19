@@ -13,5 +13,6 @@ export const getSelectedPlanAmount = (
 
   const currency = isLocalCurrency ? "₦" : "$";
 
+  // return `${currency}${planAmount}.00`;
   return `${currency}${planAmount}`;
 };

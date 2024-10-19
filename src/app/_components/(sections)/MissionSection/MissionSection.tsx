@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Inter } from "next/font/google";
-import { PairColumnBlock } from "@/app/_components";
+import { PairColumnBlock, FoundersSection } from "@/app/_components";
 import "./MissionSection.scss";
 
 const inter = Inter({
@@ -13,18 +13,21 @@ const inter = Inter({
 const MissionSection = () => {
   const [offerList, setOfferList] = useState<any>([
     {
-      title: "Brand Identity",
-      description: "Crafting unique and impactful brand identities.",
+      title: "Unmatched Creativity 🎨✨",
+      description:
+        "We pride ourselves on delivering designs that inspire and captivate audiences.",
       active: true,
     },
     {
-      title: "Stunning Websites",
-      description: "Designing captivating and engaging websites.",
+      title: "Proven Track Record 📈🏆",
+      description:
+        "Over a decade of experience helping businesses like yours achieve remarkable results.",
       active: false,
     },
     {
-      title: "Strategic Storytelling",
-      description: "Connecting your brand with its audience.",
+      title: "Tailored Strategies 🛠️📊",
+      description:
+        "We don’t believe in one-size-fits-all. Each project is custom-tailored to fit your unique brand vision.",
       active: false,
     },
   ]);
@@ -43,19 +46,28 @@ const MissionSection = () => {
       <PairColumnBlock title="Who we are">
         <div className="mission-section-wrapper">
           {/* COLUMN HEADER BLOCK */}
-          <div className={`column-header-block ${inter.className}`}>
-            <div className="">INNOVATE.</div>
-            <div className="">DESIGN.</div>
-            <div className="">LEAD.</div>
+          <div className="flex flex-col justify-between items-start h-full">
+            <div className={`column-header-block`}>
+              <div className="">INNOVATE.</div>
+              <div className="">DESIGN.</div>
+              <div className="text-primary-green">LEAD.</div>
+            </div>
+
+            {/* AVATAR ROW */}
+            <FoundersSection />
           </div>
 
           {/* COLUMN DESCRIPTION BLOCK */}
           <div className="column-description">
             <div className="column-description-header">
-              Welcome to Deskangle Studio, your go-to branding and design
-              agency. We ignite your brand with captivating creativity and
-              strategic vision, crafting extraordinary experiences that leave a
-              lasting impression.
+              At <span className="text-primary-green">Deskangle Studios</span>,
+              we don’t just build brands — we ignite them. With a blend of
+              creativity and strategic thinking, we create impactful experiences
+              that resonate and leave an indelible mark on your audience.
+              <div className="mt-5">
+                From ideation to delivery, we obsess over every detail to ensure
+                that your brand shines in every interaction.
+              </div>
             </div>
 
             <div className="offer-list">
@@ -67,7 +79,9 @@ const MissionSection = () => {
                 >
                   <div className="bullet"></div>
                   <div className="title">{offer.title}:</div>
-                  <div className="description">{offer.description}</div>
+                  {offer.active && (
+                    <div className="description">{offer.description}</div>
+                  )}
                 </div>
               ))}
             </div>

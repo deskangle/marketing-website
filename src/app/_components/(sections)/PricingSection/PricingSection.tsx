@@ -14,6 +14,10 @@ const PricingSection = () => {
         <div className="top-header-row">
           <div className="primary-text">Solutions at competitive rates</div>
 
+          <div className="primary-text primary-text-mobile">
+            <div>Solutions at</div> <div>competitive rates</div>
+          </div>
+
           <div className="secondary-text">
             No extra hassle. No managing employees. No headaches.
           </div>

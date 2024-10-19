@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { PlayIcon } from "@heroicons/react/24/solid";
 import { DoughnutCard } from "@/app/_components";
-import { FireIcon } from "@/app/_assets";
+import { FireIcon, AgencyVideo } from "@/app/_assets";
 import "./IntroSection.scss";
 
 const IntroSection = () => {
@@ -25,7 +25,7 @@ const IntroSection = () => {
             <div className="copy-block">
               <div className="primary-text">
                 <Image src={FireIcon} alt="fire-icon" width={17} height={17} />
-                <div>{`3/8 client slots available`}</div>
+                <div>{`3 of 8 client slots available`}</div>
               </div>
 
               <div className="secondary-text">
@@ -36,20 +36,17 @@ const IntroSection = () => {
 
           {/* BLOCK AREA */}
           <div className="block-two block-card">
-            {/* autoPlay */}
             <video
               poster="https://a-us.storyblok.com/f/1010806/1280x720/8bc268ee44/sample-cover-image.png/m/1400x0/"
               loop
               muted
+              autoPlay
               width="100%"
               height="100%"
               playsInline
               preload="auto"
             >
-              <source
-                src="https://a-us.storyblok.com/f/1010806/x/e0622c17f9/adr-homepagevideo_v3.mp4"
-                type="video/mp4"
-              ></source>
+              <source src={AgencyVideo} type="video/webm"></source>
 
               <span data-nosnippet="true">
                 {`Sorry, your browser doesn't support videos.`}
@@ -59,7 +56,7 @@ const IntroSection = () => {
             <div className="video-overlay">
               <div className="action-wrapper">
                 <div className="video-action" title="Play video">
-                  <PlayIcon className="text-white w-6 h-6" />
+                  <PlayIcon className="text-white w-7 h-7" />
                 </div>
               </div>
             </div>
@@ -73,8 +70,8 @@ const IntroSection = () => {
               <div className="relative top-0.5">
                 <div className="primary-text">Years of experience</div>
                 <div className="secondary-text">
-                  of combined experience helping build incredible-looking
-                  solutions
+                  Our team’s decade-long expertise drives innovative digital
+                  solutions.
                 </div>
               </div>
             </div>
@@ -86,8 +83,8 @@ const IntroSection = () => {
                 <div className="primary-text">Value driven clients</div>
 
                 <div className="secondary-text">
-                  of combined experience helping build incredible-looking
-                  solutions
+                  We work with driven brands to create lasting impact with
+                  designs.
                 </div>
               </div>
             </div>

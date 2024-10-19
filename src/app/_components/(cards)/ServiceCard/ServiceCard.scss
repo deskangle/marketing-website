@@ -1,16 +1,16 @@
 .service-card {
-  @apply border border-white/10 bg-dark-grey/70 p-8 rounded-lg shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5;
+  @apply border border-white/10 bg-dark-grey/70 p-8 sm:p-6 xs:p-5 rounded-lg shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5;
 
   .service-img {
-    @apply w-[84px] h-[76px] mb-[15px];
+    @apply w-[84px] h-[76px] mb-[15px] sm:mb-8;
   }
 
   .service-title {
-    @apply text-[23px] font-bold mb-[6px] text-white/90;
+    @apply text-[23px] sm:text-xl font-bold mb-[6px] sm:mb-2 text-white/90;
   }
 
   .service-description {
-    @apply text-[15.5px] leading-[28px] text-white/50 mb-7;
+    @apply text-[15.5px] sm:text-[14.5px] leading-[28px] sm:leading-[27.5px] text-white/65 mb-7 sm:mb-10;
   }
 
   .service-list-title {
