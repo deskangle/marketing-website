@@ -93,11 +93,12 @@ const MissionSection = () => {
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               >
-                At <span className="text-primary-green">Deskangle Studios</span>
-                , we don't just build brands — we ignite them. With a blend of
+                At{" "}
+                <span className="text-primary-green">{`Deskangle Studios, `}</span>
+                {` we don't just build brands — we ignite them. With a blend of
                 creativity and strategic thinking, we create impactful
                 experiences that resonate and leave an indelible mark on your
-                audience.
+                audience.`}
               </motion.div>
 
               <motion.div
@@ -107,8 +108,8 @@ const MissionSection = () => {
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
               >
-                From ideation to delivery, we obsess over every detail to ensure
-                that your brand shines in every interaction.
+                {`From ideation to delivery, we obsess over every detail to ensure
+                    that your brand shines in every interaction.`}
               </motion.div>
             </div>
 

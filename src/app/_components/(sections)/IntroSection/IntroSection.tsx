@@ -91,8 +91,8 @@ const IntroSection = () => {
               <div className="relative top-0.5">
                 <div className="primary-text">Years of experience</div>
                 <div className="secondary-text">
-                  Our team's decade-long expertise drives innovative digital
-                  solutions.
+                  {`Our team's decade-long expertise drives innovative digital
+                  solutions.`}
                 </div>
               </div>
             </motion.div>
