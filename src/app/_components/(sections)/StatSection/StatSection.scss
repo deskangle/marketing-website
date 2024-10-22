@@ -1,5 +1,5 @@
 .stat-section {
-  @apply relative mb-44 lg:mb-40 md:mb-32;
+  @apply relative py-12;
 
   .stat-row {
     @apply grid grid-cols-4 gap-4 lg:flex lg:flex-nowrap lg:justify-start lg:items-start lg:gap-x-4 lg:overflow-auto;

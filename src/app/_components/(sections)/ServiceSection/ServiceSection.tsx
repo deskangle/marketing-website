@@ -9,6 +9,7 @@ import {
   ProductServiceIcon,
   DevelopmentServiceIcon,
 } from "@/app/_assets";
+import { motion } from "framer-motion";
 import "./ServiceSection.scss";
 
 const ServiceSection = () => {
@@ -55,26 +56,58 @@ const ServiceSection = () => {
   ]);
 
   return (
-    <div className="service-section">
+    <div className="service-section" id="services">
       <div className="app-container">
         {/* TOP ROW */}
         <div className="top-header-row">
-          <div className="primary-text">All you want, delivered on time</div>
+          <motion.div
+            className="primary-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
+            All you want, delivered on time
+          </motion.div>
 
-          <div className="primary-text primary-text-mobile">
+          <motion.div
+            className="primary-text primary-text-mobile"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             <div>All you want,</div> <div>delivered on time</div>
-          </div>
+          </motion.div>
 
-          <div className="secondary-text">
+          <motion.div
+            className="secondary-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          >
             From business branding and ui/ux design to SaaS platform or mobile
             app
-          </div>
+          </motion.div>
         </div>
 
         {/* BOTTOM ROW */}
         <div className="card-item-row">
           {services.map((service: IServiceType, index: number) => (
-            <ServiceCard key={index} service={service} />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+                delay: 0.2 + index * 0.2,
+              }}
+            >
+              <ServiceCard service={service} />
+            </motion.div>
           ))}
         </div>
       </div>

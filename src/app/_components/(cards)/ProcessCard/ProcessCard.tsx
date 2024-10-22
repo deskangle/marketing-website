@@ -5,6 +5,7 @@ import { Tilt } from "react-tilt";
 import { CheckIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { IProcessType } from "@/app/_types";
 import "./ProcessCard.scss";
+import Link from "next/link";
 
 const defaultOptions: Record<string, number> = {
   scale: 0.98,
@@ -45,12 +46,12 @@ const ProcessCard = ({
             ))}
           </div>
         ) : (
-          <button className="btn btn-secondary">
+          <Link href="/#pricing" className="btn btn-secondary">
             <div className="btn-text">Get Started</div>{" "}
             <div className="btn-icon">
               <ArrowRightIcon className="w-5 h-5 text-white" />
             </div>{" "}
-          </button>
+          </Link>
         )}
       </div>
     </Tilt>

@@ -5,6 +5,7 @@ import { Tilt } from "react-tilt";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { StatOne, StatTwo, StatThree, StatFour } from "@/app/_assets";
+import { motion } from "framer-motion";
 import "./StatSection.scss";
 
 type statDataType = {
@@ -57,21 +58,57 @@ const StatSection = () => {
         <div className="stat-row">
           {statData.map((stat: statDataType, index: number) => (
             <Tilt options={defaultOptions} key={index}>
-              <div className="stat-card" key={index}>
+              <motion.div
+                className="stat-card"
+                key={index}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.3,
+                  ease: "easeOut",
+                }}
+              >
                 <Image
                   src={stat.image}
                   alt={stat.title}
                   width={120}
                   height={120}
-                ></Image>
+                />
 
                 <div className="relative top-0.5">
-                  <div className="stat-header">{stat.value}</div>
-                  <div className="stat-primary-text">{stat.title}</div>
+                  <motion.div
+                    className="stat-header"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                  >
+                    {stat.value}
+                  </motion.div>
 
-                  <div className="stat-secondary-text">{stat.description}</div>
+                  <motion.div
+                    className="stat-primary-text"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                  >
+                    {stat.title}
+                  </motion.div>
+
+                  <motion.div
+                    className="stat-secondary-text"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.9 }}
+                  >
+                    {stat.description}
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
             </Tilt>
           ))}
         </div>

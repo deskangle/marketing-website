@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Inter } from "next/font/google";
 import { PairColumnBlock, FoundersSection } from "@/app/_components";
+import { motion } from "framer-motion";
 import "./MissionSection.scss";
 
 const inter = Inter({
@@ -42,15 +43,41 @@ const MissionSection = () => {
   };
 
   return (
-    <div className="mission-section">
+    <div className="mission-section" id="about">
       <PairColumnBlock title="Who we are">
         <div className="mission-section-wrapper">
           {/* COLUMN HEADER BLOCK */}
           <div className="flex flex-col justify-between items-start h-full">
             <div className={`column-header-block`}>
-              <div className="">INNOVATE.</div>
-              <div className="">DESIGN.</div>
-              <div className="text-primary-green">LEAD.</div>
+              <motion.div
+                className=""
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+              >
+                INNOVATE.
+              </motion.div>
+
+              <motion.div
+                className=""
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+              >
+                DESIGN.
+              </motion.div>
+
+              <motion.div
+                className="text-primary-green"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+              >
+                LEAD.
+              </motion.div>
             </div>
 
             {/* AVATAR ROW */}
@@ -60,29 +87,52 @@ const MissionSection = () => {
           {/* COLUMN DESCRIPTION BLOCK */}
           <div className="column-description">
             <div className="column-description-header">
-              At <span className="text-primary-green">Deskangle Studios</span>,
-              we don’t just build brands — we ignite them. With a blend of
-              creativity and strategic thinking, we create impactful experiences
-              that resonate and leave an indelible mark on your audience.
-              <div className="mt-5">
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+              >
+                At <span className="text-primary-green">Deskangle Studios</span>
+                , we don't just build brands — we ignite them. With a blend of
+                creativity and strategic thinking, we create impactful
+                experiences that resonate and leave an indelible mark on your
+                audience.
+              </motion.div>
+
+              <motion.div
+                className="mt-5"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+              >
                 From ideation to delivery, we obsess over every detail to ensure
                 that your brand shines in every interaction.
-              </div>
+              </motion.div>
             </div>
 
             <div className="offer-list">
               {offerList.map((offer: any, index: number) => (
-                <div
+                <motion.div
                   className={`offer-card ${offer.active && "active-card"}`}
                   key={index}
                   onMouseEnter={() => changeActiveState(index)}
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                  transition={{
+                    duration: 0.6,
+                    ease: "easeOut",
+                    delay: 0.2 * index,
+                  }}
                 >
                   <div className="bullet"></div>
                   <div className="title">{offer.title}:</div>
                   {offer.active && (
                     <div className="description">{offer.description}</div>
                   )}
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

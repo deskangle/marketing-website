@@ -13,6 +13,7 @@ import {
   AdvantageAfricaLogo,
   GlaxeLogo,
 } from "@/app/_assets";
+import { motion } from "framer-motion";
 import "./ClientSection.scss";
 
 type LogoType = {
@@ -63,14 +64,26 @@ const clientLogo: LogoType[] = [
 const ClientSection = () => {
   return (
     <div className="client-block">
-      <div className="app-container client-content text-white">
+      <motion.div
+        className="app-container client-content text-white"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <div className="primary-text">
           Trusted by brands that value excellence
         </div>
-      </div>
+      </motion.div>
 
       {/* CLIENT ROW */}
-      <div className="client-wrapper">
+      <motion.div
+        className="client-wrapper"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+      >
         <div className="client-row">
           {[...clientLogo, ...clientLogo].map(
             (logo: LogoType, index: number) => (
@@ -88,7 +101,7 @@ const ClientSection = () => {
             )
           )}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

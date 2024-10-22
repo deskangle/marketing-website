@@ -1,7 +1,7 @@
 @import "../../../_assets//scss/app.scss";
 
 .intro-section {
-  @apply mb-48 xl:mb-40 md:mb-28;
+  @apply pb-12;
 
   .intro-block-row {
     @apply flex md:flex-col justify-between lg:justify-start items-start gap-4 h-[400px] md:h-auto;

@@ -1,7 +1,7 @@
 @import "../../../_assets/scss/breakpoints.scss";
 
 .mission-section {
-  @apply relative pt-4 mb-40 md:mb-[118px];
+  @apply relative pt-40 md:pt-28 pb-20;
 
   .mission-section-wrapper {
     @apply flex justify-between items-start;

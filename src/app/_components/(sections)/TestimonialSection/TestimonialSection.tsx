@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { PairColumnBlock, TestimonialCard } from "@/app/_components";
 import { VideoTestimonialOne, VideoTestimonialTwo } from "@/app/_assets";
+import { motion } from "framer-motion";
 import "./TestimonialSection.scss";
 
 const testimonialDataset = [
@@ -93,25 +96,42 @@ const TestimonialSection = () => {
   return (
     <div className="testimonial-section">
       <PairColumnBlock title="CLIENT SUCCESS">
-        <div className="testimonial-title-text">
+        <motion.div
+          className="testimonial-title-text"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+        >
           <span className="text-white/45">Success in Every Story:</span> From
           concept to creation, we turn visions into impactful realities, driven
           by innovation.
-        </div>
+        </motion.div>
       </PairColumnBlock>
 
       <div className="app-container">
         <div className="testimonial-grid-area">
           {testimonialDataset.map((testimonial: any, index: number) => (
             <div key={index} className="testimonial-col">
-              <TestimonialCard
-                name={testimonial.name}
-                role={testimonial.role}
-                quote={testimonial.quote}
-                avatar={testimonial.avatar}
-                isVideo={testimonial.isVideo}
-                videoThumbnail={testimonial.videoThumbnail}
-              />
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: 0.2 + index * 0.2,
+                }}
+              >
+                <TestimonialCard
+                  name={testimonial.name}
+                  role={testimonial.role}
+                  quote={testimonial.quote}
+                  avatar={testimonial.avatar}
+                  isVideo={testimonial.isVideo}
+                  videoThumbnail={testimonial.videoThumbnail}
+                />
+              </motion.div>
             </div>
           ))}
         </div>

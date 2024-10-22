@@ -1,37 +1,81 @@
+"use client";
+
 import React from "react";
 import {
   PricingAreaCard,
   PricingSlotCard,
   PricingFeatureCard,
 } from "@/app/_components";
+import { motion } from "framer-motion";
 import "./PricingSection.scss";
 
 const PricingSection = () => {
   return (
-    <div className="pricing-section">
+    <div className="pricing-section" id="pricing">
       <div className="app-container">
         {/* TOP ROW */}
         <div className="top-header-row">
-          <div className="primary-text">Solutions at competitive rates</div>
+          <motion.div
+            className="primary-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
+            Solutions at competitive rates
+          </motion.div>
 
-          <div className="primary-text primary-text-mobile">
+          <motion.div
+            className="primary-text primary-text-mobile"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             <div>Solutions at</div> <div>competitive rates</div>
-          </div>
+          </motion.div>
 
-          <div className="secondary-text">
+          <motion.div
+            className="secondary-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          >
             No extra hassle. No managing employees. No headaches.
-          </div>
+          </motion.div>
         </div>
 
         {/* PRICING DISPLAY AREA */}
         <div className="pricing-area">
-          <div className="pricing-area--left">
+          <motion.div
+            className="pricing-area--left"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             <PricingAreaCard />
-          </div>
+          </motion.div>
 
           <div className="pricing-area--right">
-            <PricingSlotCard />
-            <PricingFeatureCard />
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            >
+              <PricingSlotCard />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+            >
+              <PricingFeatureCard />
+            </motion.div>
           </div>
         </div>
       </div>

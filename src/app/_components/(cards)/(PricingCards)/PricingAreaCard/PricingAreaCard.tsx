@@ -6,6 +6,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { PricingPeriodCard, PricingPlanCard } from "@/app/_components";
 import { IPricingType } from "@/app/_types";
 import { useAppStore } from "@/app/_store";
+import { motion } from "framer-motion";
 import "./PricingAreaCard.scss";
 
 const PricingAreaCard = () => {

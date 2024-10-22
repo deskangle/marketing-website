@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
-import "./FAQSection.scss";
+import { motion } from "framer-motion";
 import { FAQCard } from "@/app/_components";
+import "./FAQSection.scss";
 
 const faqs = [
   {
@@ -41,21 +44,54 @@ const FAQSection = () => {
       <div className="app-container">
         {/* TOP ROW */}
         <div className="top-header-row">
-          <div className="primary-text">Frequently Asked Questions</div>
+          <motion.div
+            className="primary-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
+            Frequently Asked Questions
+          </motion.div>
 
-          <div className="primary-text primary-text-mobile">
+          <motion.div
+            className="primary-text primary-text-mobile"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             <div>Frequently</div> <div>Asked Questions</div>
-          </div>
+          </motion.div>
 
-          <div className="secondary-text">
+          <motion.div
+            className="secondary-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          >
             Trusted by brands that value excellence
-          </div>
+          </motion.div>
         </div>
 
         {/* FAQ LIST */}
         <div className="faq-list">
           {faqs.map((faq, index) => (
-            <FAQCard key={index} question={faq.question} answer={faq.answer} />
+            <motion.div
+              className="w-full"
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+                delay: 0.2 + index * 0.2,
+              }}
+            >
+              <FAQCard question={faq.question} answer={faq.answer} />
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import { WorkCard } from "@/app/_components";
 import { IWorkType } from "@/app/_types";
 import {
@@ -61,19 +64,39 @@ const WorkSection = () => {
   };
 
   return (
-    <div className="work-section">
+    <div className="work-section" id="work">
       <div className="app-container">
         {/* TOP ROW */}
         <div className="top-header-row">
-          <div className="primary-text">Our Work Transforms Brands</div>
+          <motion.div
+            className="primary-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
+            Our Work Transforms Brands
+          </motion.div>
 
-          <div className="primary-text primary-text-mobile">
+          <motion.div
+            className="primary-text primary-text-mobile"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             <div>Our Work</div> <div>Transforms Brands</div>
-          </div>
+          </motion.div>
 
-          <div className="secondary-text">
+          <motion.div
+            className="secondary-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          >
             Partnered with brands pushing boundaries and setting new standards
-          </div>
+          </motion.div>
         </div>
 
         {/* WORK ITEMS */}

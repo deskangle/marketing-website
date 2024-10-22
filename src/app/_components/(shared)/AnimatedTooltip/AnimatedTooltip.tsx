@@ -40,11 +40,18 @@ const AnimatedTooltip = ({
   return (
     <>
       {items.map((item, idx) => (
-        <div
+        <motion.div
           className="-mr-4 relative group"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: idx * 0.3,
+            ease: "easeOut",
+          }}
         >
           <AnimatePresence mode="popLayout">
             {hoveredIndex === item.id && (
@@ -85,7 +92,7 @@ const AnimatedTooltip = ({
             alt={item.name}
             className="object-cover !m-0 !p-0 object-top rounded-full h-[82px] sm:h-[80px] w-[82px] sm:w-[80px] border-2 sm:border group-hover:scale-110 group-hover:z-30 border-white relative transition duration-500 ease-in-out"
           />
-        </div>
+        </motion.div>
       ))}
     </>
   );

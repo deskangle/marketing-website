@@ -61,7 +61,7 @@
               @apply relative flex justify-end items-center;
 
               .people {
-                @apply relative overflow-hidden rounded-full size-[36px] lg:size-[31px] min-h-[36px] lg:min-h-[31px] min-w-[36px] lg:min-w-[31px] border border-black-drop/70 bg-gray-400/95 first-of-type:left-[20px] lg:first-of-type:left-[18px] last-of-type:-left-[3px] lg:last-of-type:left-1;
+                @apply relative overflow-hidden rounded-full size-[36px] lg:size-[31px] min-h-[36px] lg:min-h-[31px] min-w-[36px] lg:min-w-[31px] border border-black-drop/50 bg-gray-400/95 first-of-type:left-[20px] lg:first-of-type:left-[18px] last-of-type:left-1 lg:last-of-type:left-1;
 
                 img {
                   @apply absolute object-cover w-full h-full;

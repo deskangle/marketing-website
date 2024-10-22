@@ -26,7 +26,7 @@ const TopBar = () => {
     <header className={`${isScrolled && "is-scrolled"}`}>
       <div className="header-container app-container">
         {/* BRAND LOG */}
-        <Link href="/">
+        <Link href="/#">
           <Image
             src={DeskangleLogoDark}
             alt="Deskangle logo"
@@ -38,28 +38,28 @@ const TopBar = () => {
 
         {/* NAV ITEMS */}
         <nav>
-          <Link href="/about-us" className="nav-item">
+          <Link href="/#about" className="nav-item">
             About
           </Link>
 
-          <Link href="/" className="nav-item">
+          <Link href="/#work" className="nav-item">
             Work
           </Link>
 
-          <Link href="/services" className="nav-item">
+          <Link href="/#services" className="nav-item">
             Services
           </Link>
 
-          <Link href="/insights" className="nav-item">
+          <Link href="/#pricing" className="nav-item">
             Pricing
           </Link>
 
-          <Link href="/process" className="nav-item">
+          <Link href="/#process" className="nav-item">
             Process
           </Link>
         </nav>
 
-        <Link href="/" className="btn btn-primary-green nav-item-btn">
+        <Link href="/#pricing" className="btn btn-primary-green nav-item-btn">
           Get Started
         </Link>
 

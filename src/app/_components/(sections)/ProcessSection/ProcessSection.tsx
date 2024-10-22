@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import { PairColumnBlock, ProcessCard } from "@/app/_components";
 import { IProcessType } from "@/app/_types";
 import "./ProcessSection.scss";
@@ -50,24 +53,38 @@ const ProcessSection = () => {
   ];
 
   return (
-    <div className="process-section">
+    <div className="process-section" id="process">
       <PairColumnBlock title="Our Process">
-        <div className="process-title-text">
+        <motion.div
+          className="process-title-text"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+        >
           <span className="text-white/45">Collaborative Design Process:</span>{" "}
           {`We dive deep into your brand's essence, ideate innovative solutions,
           and meticulously craft exceptional experiences for success.`}
-        </div>
+        </motion.div>
       </PairColumnBlock>
 
       <div className="process-flow-section">
         <div className="app-container">
           <div className="process-block">
             {processList.map((process: IProcessType, index: number) => (
-              <ProcessCard
+              <motion.div
                 key={index}
-                process={process}
-                counter={index + 1}
-              ></ProcessCard>
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: 0.2 + index * 0.2,
+                }}
+              >
+                <ProcessCard process={process} counter={index + 1} />
+              </motion.div>
             ))}
           </div>
         </div>
