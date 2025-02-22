@@ -43,9 +43,9 @@
     @apply flex justify-start items-center gap-5 w-max relative;
     animation: scroll 15s linear infinite;
 
-    &:hover {
-      animation-play-state: paused;
-    }
+    // &:hover {
+    //   animation-play-state: paused;
+    // }
 
     .client-col {
       @apply flex-shrink-0 w-[260px] sm:w-[230px] h-36 sm:h-32 flex justify-center items-center p-6 bg-black-drop-light/35 rounded-lg backdrop-blur-md border border-white/10 transition-all duration-300 ease-in-out hover:bg-primary-green/5;

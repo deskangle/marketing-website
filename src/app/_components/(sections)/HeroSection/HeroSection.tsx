@@ -32,12 +32,12 @@ const HeroSection = () => {
               <div className="check-indicator">
                 <CheckIcon />
               </div>
-              <div>{`Dedicated team of pro designers & developers`}</div>
+              <div>{`Dedicated team of Pro Designers & Engineers`}</div>
             </div>
 
             {/* HERO HEADLINE */}
             <div className={`hero-headline ${inter.className}`}>
-              {`Design & Development Solutions for Forward Thinking Brands`}
+              {`Tired of Slow SaaS Product Cycles? We Speed Up Innovation.`}
             </div>
           </motion.div>
 
@@ -49,63 +49,55 @@ const HeroSection = () => {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           >
-            {`At Deskangle, we craft custom digital solutions—combining tailored design, innovative development, and strategic marketing to help our clients succeed in the digital space.`}
+            {`We empower SaaS companies with expert product design, fast-paced development, and growth strategies that drive user engagement.`}
           </motion.div>
 
           {/* ACTION ROW */}
-          <motion.div className="action-row">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-            >
-              <Link href="/#pricing" className="btn btn-primary-green">
-                <div className="btn-text">Get Started</div>{" "}
-                <div className="btn-icon">
-                  <ArrowRightIcon className="w-5 h-5 text-white" />
-                </div>{" "}
-              </Link>
-            </motion.div>
+          <motion.div
+            className="action-row"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          >
+            <Link href="/#pricing" className="btn btn-primary-green">
+              <div className="btn-text">Explore our Solutions</div>{" "}
+              <div className="btn-icon">
+                <ArrowRightIcon className="w-5 h-5 text-white" />
+              </div>{" "}
+            </Link>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-            >
-              <button className="btn btn-primary-green-outline">
-                <div className="text">Book a Call</div>
-                <div className="people-row">
-                  <div className="people">
-                    <Image
-                      src={AvatarOne}
-                      alt="efemena-elvis"
-                      width="40"
-                      height="40"
-                    ></Image>
-                  </div>
-
-                  <div className="people moveable">
-                    <Image
-                      src={AvatarTwo}
-                      alt="daniel-akinleye"
-                      width="40"
-                      height="40"
-                    ></Image>
-                  </div>
-
-                  <div className="people">
-                    <Image
-                      src={AvatarThree}
-                      alt="ehiz-eneboh"
-                      width="40"
-                      height="40"
-                    ></Image>
-                  </div>
+            <button className="btn btn-primary-green-outline">
+              <div className="text">Book a 15-min Call</div>
+              <div className="people-row">
+                <div className="people">
+                  <Image
+                    src={AvatarOne}
+                    alt="efemena-elvis"
+                    width="40"
+                    height="40"
+                  ></Image>
                 </div>
-              </button>
-            </motion.div>
+
+                <div className="people moveable">
+                  <Image
+                    src={AvatarTwo}
+                    alt="daniel-akinleye"
+                    width="40"
+                    height="40"
+                  ></Image>
+                </div>
+
+                <div className="people">
+                  <Image
+                    src={AvatarThree}
+                    alt="ehiz-eneboh"
+                    width="40"
+                    height="40"
+                  ></Image>
+                </div>
+              </div>
+            </button>
           </motion.div>
         </div>
       </div>

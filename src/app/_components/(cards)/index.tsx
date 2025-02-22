@@ -5,5 +5,6 @@ export { default as ProcessCard } from "./ProcessCard/ProcessCard";
 export { default as WhyCard } from "./WhyCard/WhyCard";
 export { default as FAQCard } from "./FAQCard/FAQCard";
 export { default as TestimonialCard } from "./TestimonialCard/TestimonialCard";
+export { default as ProjectCard } from "./ProjectCard/ProjectCard";
 
 export * from "./(PricingCards)";

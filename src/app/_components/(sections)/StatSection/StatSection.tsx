@@ -27,28 +27,28 @@ const StatSection = () => {
       image: StatOne,
       title: "Client satisfaction rate",
       description:
-        "Achieved over the past 12 months, reflecting our track record of building innovative quality solutions.",
+        "Committed to delivering SaaS products; clients love and are excited to use",
     },
     {
       value: "40%",
       image: StatTwo,
       title: "Average ROI Increase",
       description:
-        "On average, clients have seen a 40% ROI increase within the first six months of partnering with us.",
+        "Our SaaS strategies helps achieve a 40% ROI increase in under 6 months.",
     },
     {
       value: "60%",
       image: StatThree,
       title: "Website Traffic Increase",
       description:
-        "Clients experienced a 60% boost in website traffic in just 3 months, thanks to our targeted digital strategies.",
+        "Drive a 60% website traffic surge, on our targeted SaaS strategies.",
     },
     {
       value: "30%",
       image: StatFour,
       title: "Conversion Rates",
       description:
-        "Achieved a 30% improvement in conversion rates within 6 months for clients across various industries.",
+        "Targeted approach; spiked an increase of 30% conversion rate in 6 months.",
     },
   ]);
 
@@ -58,18 +58,7 @@ const StatSection = () => {
         <div className="stat-row">
           {statData.map((stat: statDataType, index: number) => (
             <Tilt options={defaultOptions} key={index}>
-              <motion.div
-                className="stat-card"
-                key={index}
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.1 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.3,
-                  ease: "easeOut",
-                }}
-              >
+              <div className="stat-card" key={index}>
                 <Image
                   src={stat.image}
                   alt={stat.title}
@@ -108,7 +97,7 @@ const StatSection = () => {
                     {stat.description}
                   </motion.div>
                 </div>
-              </motion.div>
+              </div>
             </Tilt>
           ))}
         </div>

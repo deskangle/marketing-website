@@ -25,7 +25,7 @@ const IntroSection = () => {
             <div className="doughnut-block">
               <DoughnutCard />
               <div className="doughnut-label">
-                <div className="text">3/8</div>
+                <div className="text">2/5</div>
                 <div className="description">SLOTS</div>
               </div>
             </div>
@@ -34,11 +34,11 @@ const IntroSection = () => {
             <div className="copy-block">
               <div className="primary-text">
                 <Image src={FireIcon} alt="fire-icon" width={17} height={17} />
-                <div>{`3 of 8 client slots available`}</div>
+                <div>{`2 of 5 Client Slots Open`}</div>
               </div>
 
               <div className="secondary-text">
-                {`We don't chase after quantity, but rather great results`}
+                {`We focus on high-impact SaaS products, not just quantity.`}
               </div>
             </div>
           </motion.div>
@@ -61,7 +61,7 @@ const IntroSection = () => {
               playsInline
               preload="auto"
             >
-              <source src={AgencyVideo} type="video/webm"></source>
+              <source src={AgencyVideo} type="video/mp4"></source>
 
               <span data-nosnippet="true">
                 {`Sorry, your browser doesn't support videos.`}
@@ -89,10 +89,9 @@ const IntroSection = () => {
               <div className="header-text">10+</div>
 
               <div className="relative top-0.5">
-                <div className="primary-text">Years of experience</div>
+                <div className="primary-text">Years Building SaaS Products</div>
                 <div className="secondary-text">
-                  {`Our team's decade-long expertise drives innovative digital
-                  solutions.`}
+                  {`Our expertise helps ambitious SaaS brands launch, scale and win.`}
                 </div>
               </div>
             </motion.div>
@@ -107,11 +106,11 @@ const IntroSection = () => {
               <div className="header-text">50+</div>
 
               <div className="relative top-0.5">
-                <div className="primary-text">Value driven clients</div>
+                <div className="primary-text">SaaS Brands Impacted</div>
 
                 <div className="secondary-text">
-                  We work with driven brands to create lasting impact with
-                  designs.
+                  We partner with SaaS brands that are passionate about growth
+                  and innovation.
                 </div>
               </div>
             </motion.div>

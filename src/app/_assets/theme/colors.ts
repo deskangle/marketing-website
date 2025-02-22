@@ -1,7 +1,7 @@
 export const COLORS: any = {
   "primary-green": "#41de5b",
   "dark-grey": "#272727",
-  "black-drop": "#0f0f0f",
+  "black-drop": "#0d0d0d",
   "black-drop-light": "#211f25",
   "tint-blue": "#d6e8f5",
   "tint-purple": "#dfd7f5",

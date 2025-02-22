@@ -16,7 +16,7 @@ const ServiceSection = () => {
   const [services, _] = useState<IServiceType[]>([
     {
       icon: BrandingServiceIcon,
-      title: "Branding",
+      title: "Brand Identity",
       description:
         "We craft brand stories that connect with your audience, ensuring all visual elements aligns with business your goals.",
       listTitle: "Branding Services",
@@ -47,9 +47,9 @@ const ServiceSection = () => {
         "We provide development solutions focused on performance, security, and scalability to help businesses grow and adapt.",
       listTitle: "Development Services",
       serviceList: [
-        "Custom Web & App Development",
-        "API Integration",
-        "Continuous Optimization & Maintenance",
+        "Custom Web & Mobile Development",
+        "API & CMS Integration",
+        "No-Code product development",
       ],
       style: "bg-tint-green/85 border-tint-green",
     },

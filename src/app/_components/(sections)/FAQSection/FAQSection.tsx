@@ -7,34 +7,30 @@ import "./FAQSection.scss";
 
 const faqs = [
   {
-    question: "How long does the branding design process take?",
+    question: "How do you ensure our SaaS product is scalable?",
     answer:
-      "The timeline varies based on project complexity and feedback. A typical branding package can be delivered within 1-3 weeks.",
+      "We architect our systems with scalability as a priority, ensuring your SaaS product can handle increasing user loads and evolving business demands.",
   },
   {
-    question: "What do you need from me to begin the branding process?",
+    question: "What happens if we need changes or updates after launch?",
     answer:
-      "We’ll need details about your business goals, target audience, and any existing brand assets. We’ll also provide a brand questionnaire to gather deeper insights.",
+      "We provide flexible post-launch support packages to adapt to your evolving needs and ensure your SaaS product continues to perform and scale effectively.",
   },
   {
-    question: "Do you offer custom software development?",
+    question: "Can you handle complex integrations for our SaaS application?",
     answer:
-      "Yes, we specialize in custom web and mobile applications tailored to meet your business's unique needs.",
+      "Yes, we specialize in seamless API integrations and custom development to ensure your SaaS application works efficiently with other software.",
   },
   {
-    question: "What if I want revisions after the product launch?",
+    question:
+      "How can you help us improve user engagement with our SaaS product?",
     answer:
-      "We offer post-launch support and revision packages to accommodate any necessary changes or updates as your business evolves.",
+      "We design intuitive user interfaces and experiences, leveraging user insights to ensure your product is engaging, easy to use, and drives conversion.",
   },
   {
-    question: "Can you assist with product development and launch strategies?",
+    question: "Can you help us strategize our Go-To-Market approach?",
     answer:
-      "Absolutely! From product design to prototyping and go-to-market strategies, we collaborate to ensure a smooth and successful launch.",
-  },
-  {
-    question: "What differentiates your branding services from others?",
-    answer:
-      "We focus on creating holistic brand strategies that not only visually appeal but align with your business goals to build long-lasting brand recognition.",
+      "Yes! We partner with you to create a custom Go-To-Market strategy that is aligned with your product's value proposition, positioning, and target audience for a successful launch.",
   },
 ];
 

@@ -8,21 +8,21 @@ import "./TestimonialSection.scss";
 
 const testimonialDataset = [
   {
-    name: "Liam Stevens",
-    role: "CEO & Founder, Stevens Tech",
+    name: "Tomisin Olaofe",
+    role: "Future Services Lead, Jaguar Land Rover",
     quote:
-      "This is what I wish I had when launching my very first business. Matt has been building communities and businesses at scale for years. I can't imagine a better course, or a better teacher to help entrepreneurs build their brand, community and business.",
+      "Our team was amazed by the agility and work ethic of the agency. Their intelligence and dedication were impressive but it was the ability to deeply understand our users, and provide excellent user interfaces that made them stand out. Their willingness to work across multiple stakeholders to clarify key issues and explain things in very easy-to-understand terms made them a great team player",
     avatar:
-      "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxhdmF0YXJ8ZW58MHx8MHx8fDA%3D",
+      "https://res.cloudinary.com/richy-jones/image/upload/v1703514594/tomisin.jpg",
     isVideo: false,
   },
   {
-    name: "Emily Clark",
-    role: "Marketing Specialist, Clark Media",
+    name: "Femi Ibiwoye",
+    role: "Chief Technical Officer, Gradely",
     quote:
-      "The insights I gained here are invaluable. I was able to grow my audience significantly in just a few weeks. The tips on social media strategy alone have revolutionized how I approach campaigns.",
+      "Their expertise in building a secure, scalable SaaS application stood out from day one. Every architecture decision reflected modern best practices, and their collaborative approach made the entire process seamless. They didn’t just deliver; they became a trusted partner, that I would recommend to anyone.",
     avatar:
-      "https://images.unsplash.com/photo-1706885093496-64e6ff14155e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHxhdmF0YXJ8ZW58MHx8MHx8fDA%3D",
+      "https://res.cloudinary.com/richy-jones/image/upload/v1736262811/Femi.jpg",
     isVideo: false,
   },
   {
@@ -33,52 +33,52 @@ const testimonialDataset = [
     avatar:
       "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMwfHxhdmF0YXJ8ZW58MHx8MHx8fDA%3D",
     videoThumbnail: VideoTestimonialOne,
-    isVideo: true,
-  },
-  {
-    name: "Sophia Williams",
-    role: "Creative Director, Artify",
-    quote:
-      "Taking Matt's class changed my life for the better. Within one week of finishing the program, I signed three new clients with many more interested in working together. This is all thanks to implementing the strategy, tips, and niche focusing taught in Founder OS. Matt sets you up with systems to be not only a better entrepreneur but a better human too. For anyone looking to learn how to improve their online presence, build a business, or find inspiration for content, Matt's course is worth the investment.",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww",
     isVideo: false,
   },
   {
-    name: "James Brown",
-    role: "CTO, TechNova",
+    name: "Imole Oluyemi",
+    role: "Product Lead, Class54 / Techhaven Africa",
     quote:
-      "This course provides actionable steps to take your business to the next level. Highly recommended for anyone looking to make a real impact in the tech industry.",
+      "They're an exceptional engineering agency known for on-time delivery and top-notch quality. They excel at communication and understanding both the technical and business implications of a project. Their passion for user-centered interfaces makes them an ideal collaborator. The team played a crucial role in enhancing our product touchpoints. They consistently deliver high-quality software on time and I cannot recommend them enough, they always exceed expectations.",
     avatar:
-      "https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXZhdGFyfGVufDB8fDB8fHww",
+      "https://res.cloudinary.com/richy-jones/image/upload/v1703514594/imole.jpg",
     isVideo: false,
   },
   {
-    name: "Olivia Martinez",
-    role: "Founder, WellnessWave",
+    name: "Gerrald Peters",
+    role: "Senior Technical Lead, Trac",
     quote:
-      "I’ve taken many courses, but this one stands out for its depth and practical advice. The module on client acquisition alone has helped me expand my client base by 30% in just two months.",
+      "Choosing the right SaaS tech stack can be overwhelming due to too many options available. Deskangle's consultation was a game-changer. They listened, helped us decide on the right strategy, and now we're making more revenue. Book a consultation with them!",
     avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fHww",
+      "https://res.cloudinary.com/richy-jones/image/upload/v1739919381/gerrald_bdl7cb.jpg",
     isVideo: false,
   },
   {
-    name: "Victoria Carter",
-    role: "Growth Hacker, ScaleUp",
+    name: "Oluwaseyi Adelaju",
+    role: "Growth Product Manager, SEAMFIX",
     quote:
-      "A fantastic program that helped me streamline my processes and achieve more in less time. The techniques for scaling a business were exactly what I needed to hear.",
+      "They were exceptionally dedicated to our project. What we valued most was their eye for detail, team collaboration, and objectivity in every task. They are indeed a valuable asset to any SaaS company and provide the perfect strategic partnership.",
     avatar:
-      "https://plus.unsplash.com/premium_photo-1669879825881-6d4e4bde67d5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://res.cloudinary.com/richy-jones/image/upload/v1703514595/oluwaseyi.jpg",
+    isVideo: false,
+  },
+  {
+    name: "Andre Coleman",
+    role: "Creative director, LogoVerily",
+    quote:
+      "From a memorable logo to a relatable brand story, Deskangle's branding experience captured our vision perfectly and helped increase brand recognition by 40%. Would be so proud to recommend.",
+    avatar:
+      "https://res.cloudinary.com/richy-jones/image/upload/v1736269719/andre-coleman_1.png",
     videoThumbnail: VideoTestimonialTwo,
-    isVideo: true,
+    isVideo: false,
   },
   {
-    name: "Ava Rodriguez",
-    role: "Entrepreneur, Ava's Boutique",
+    name: "Marvelous Enofe",
+    role: "Founder, MarvCollections",
     quote:
-      "The strategies shared here are a game changer. My business has never been more profitable. The customer engagement strategies alone have increased my repeat customers by 50%.",
+      "We were struggling to get our website to rank in search results. Deskangle came in and optimized our copy for SEO, using strategic keywords and clear, concise language. As a result, our website traffic has skyrocketed, and we're now reaching a much wider audience. If you're looking to boost your online visibility, they are the partner you need.",
     avatar:
-      "https://plus.unsplash.com/premium_photo-1670884442192-7b58d513cd55?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://res.cloudinary.com/richy-jones/image/upload/v1740012291/marvy_aglttc.png",
     isVideo: false,
   },
   {
@@ -101,7 +101,7 @@ const TestimonialSection = () => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         >
           <span className="text-white/45">Success in Every Story:</span> From
           concept to creation, we turn visions into impactful realities, driven
@@ -118,9 +118,9 @@ const TestimonialSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.4,
                   ease: "easeOut",
-                  delay: 0.2 + index * 0.2,
+                  delay: index * 0.1,
                 }}
               >
                 <TestimonialCard

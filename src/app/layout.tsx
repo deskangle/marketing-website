@@ -8,7 +8,6 @@ const sourceSans = Source_Sans_3({
   weight: ["300", "400", "500", "700", "900"],
 });
 
-
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],

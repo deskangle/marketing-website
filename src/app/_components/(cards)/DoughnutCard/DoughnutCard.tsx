@@ -32,7 +32,7 @@ const DoughnutCard = () => {
     datasets: [
       {
         label: "# of Slots",
-        data: [5, 3],
+        data: [3, 2],
         backgroundColor: ["rgba(65, 222, 91, 0.2)", "rgba(112, 112, 112, 0.2)"],
         borderColor: ["rgba(65, 222, 91, 0.7)", "rgba(112, 112, 112, 0.7)"],
         borderWidth: 1,

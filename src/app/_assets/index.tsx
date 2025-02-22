@@ -1,15 +1,7 @@
 export { default as DeskangleLogoLight } from "./images/deskangle-logo-light.png";
 export { default as DeskangleLogoDark } from "./images/deskangle-logo-dark.png";
 
-export { default as AgencyVideo } from "./videos/agency.webm";
-
-// CLIENTS
-// export { default as GradelyLogoWhite } from "./images/clients/client-gradely-white.svg";
-// export { default as VesicashLogoWhite } from "./images/clients/client-vesicash-white.svg";
-// export { default as BudgitLogoWhite } from "./images/clients/client-budgit-white.svg";
-// export { default as Class54LogoWhite } from "./images/clients/client-class54-white.svg";
-// export { default as PaveLogoWhite } from "./images/clients/client-pave-white.svg";
-// export { default as InvictusLogoWhite } from "./images/clients/client-invictus-white.svg";
+export { default as AgencyVideo } from "./videos/agency.mp4";
 
 // CLIENTS COLORS
 export { default as GradelyLogo } from "./images/clients/client-gradely.svg";
@@ -29,12 +21,14 @@ export { default as DevelopmentServiceIcon } from "./images/development-ui.svg";
 export { default as FireIcon } from "./images/fire.png";
 
 // PROJECTS
-export { default as ProjectOne } from "./images/projects/project-1.jpg";
-export { default as ProjectTwo } from "./images/projects/project-2.jpg";
-export { default as ProjectThree } from "./images/projects/project-3.jpg";
-export { default as ProjectFour } from "./images/projects/project-4.jpg";
-export { default as ProjectFive } from "./images/projects/project-5.jpg";
-export { default as ProjectSix } from "./images/projects/project-6.jpg";
+export { default as ProjectOne } from "./images/projects/gradely-one.png";
+export { default as ProjectTwo } from "./images/projects/class54-one.png";
+export { default as ProjectThree } from "./images/projects/pave-one.png";
+export { default as ProjectFour } from "./images/projects/vesicash-one.png";
+export { default as ProjectFive } from "./images/projects/gp-one.png";
+export { default as ProjectSix } from "./images/projects/project-1.jpg";
+
+export { default as GradelyMockup } from "./images/projects/gradely-mockup.webp";
 
 // TESTIMONIALS
 export { default as VideoTestimonialOne } from "./images/testimonials/video-testimonial-one.jpg";

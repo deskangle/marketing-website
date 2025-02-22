@@ -1,0 +1,15 @@
+.project-card {
+  @apply relative;
+
+  img {
+    @apply w-full h-auto;
+  }
+
+  .project-card-display {
+    @apply absolute bottom-0 mx-auto w-full h-[91%] pb-1.5;
+
+    .browser-content {
+      @apply relative w-[97%] h-full mx-auto overflow-auto;
+    }
+  }
+}

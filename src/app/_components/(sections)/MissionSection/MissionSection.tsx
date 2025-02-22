@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Inter } from "next/font/google";
 import { PairColumnBlock, FoundersSection } from "@/app/_components";
 import { motion } from "framer-motion";
+import { CheckIcon } from "@heroicons/react/24/solid";
 import "./MissionSection.scss";
 
 const inter = Inter({
@@ -14,21 +15,21 @@ const inter = Inter({
 const MissionSection = () => {
   const [offerList, setOfferList] = useState<any>([
     {
-      title: "Unmatched Creativity 🎨✨",
+      title: "Agile SaaS Design",
       description:
-        "We pride ourselves on delivering designs that inspire and captivate audiences.",
+        "We craft intuitive, future-proof interfaces that drive conversions and engagement",
       active: true,
     },
     {
-      title: "Proven Track Record 📈🏆",
+      title: "Fast-Track Development",
       description:
-        "Over a decade of experience helping businesses like yours achieve remarkable results.",
+        "We accelerate your SaaS product launch without compromising quality and scalability.",
       active: false,
     },
     {
-      title: "Tailored Strategies 🛠️📊",
+      title: "Custom SaaS Solutions",
       description:
-        "We don’t believe in one-size-fits-all. Each project is custom-tailored to fit your unique brand vision.",
+        "We tailor our processes to match the unique needs of your product and market.",
       active: false,
     },
   ]);
@@ -48,7 +49,7 @@ const MissionSection = () => {
         <div className="mission-section-wrapper">
           {/* COLUMN HEADER BLOCK */}
           <div className="flex flex-col justify-between items-start h-full">
-            <div className={`column-header-block`}>
+            <div className={`column-header-block ${inter.className}`}>
               <motion.div
                 className=""
                 initial={{ opacity: 0, x: -50 }}
@@ -93,12 +94,9 @@ const MissionSection = () => {
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               >
-                At{" "}
-                <span className="text-primary-green">{`Deskangle Studios, `}</span>
-                {` we don't just build brands — we ignite them. With a blend of
-                creativity and strategic thinking, we create impactful
-                experiences that resonate and leave an indelible mark on your
-                audience.`}
+                Welcome to{" "}
+                <span className="text-primary-green font-semibold">{` Deskangle Studios, `}</span>
+                {`where we don't just iterate on SaaS — we innovate at scale. We fuse cutting-edge design and agile development to build fast and scalable SaaS products for disruptive brands.`}
               </motion.div>
 
               <motion.div
@@ -108,8 +106,7 @@ const MissionSection = () => {
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
               >
-                {`From ideation to delivery, we obsess over every detail to ensure
-                    that your brand shines in every interaction.`}
+                {`From concept to launch, we're obsessed with reducing time to market and maximizing user adoption.`}
               </motion.div>
             </div>
 
@@ -128,8 +125,11 @@ const MissionSection = () => {
                     delay: 0.2 * index,
                   }}
                 >
-                  <div className="bullet"></div>
-                  <div className="title">{offer.title}:</div>
+                  <div className="bullet">
+                    <CheckIcon className="check-icon" />
+                  </div>
+
+                  <div className="title">{offer.title}</div>
                   {offer.active && (
                     <div className="description">{offer.description}</div>
                   )}

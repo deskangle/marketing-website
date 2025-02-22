@@ -1,9 +1,15 @@
 "use client";
 
 import React from "react";
+import { Inter } from "next/font/google";
 import { AvatarOne, AvatarTwo, AvatarThree } from "@/app/_assets";
 import { AnimatedTooltip } from "@/app/_components";
 import "./FoundersSection.scss";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700", "900"],
+});
 
 const people = [
   {
@@ -35,7 +41,9 @@ const FoundersSection = () => {
           <AnimatedTooltip items={people} />
         </div>
 
-        <div className="avatar-title">DESKANGLE CO-FOUNDERS</div>
+        <div className={`avatar-title ${inter.className}`}>
+          DESKANGLE CO-FOUNDERS
+        </div>
       </div>
     </>
   );

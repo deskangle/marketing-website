@@ -1,11 +1,11 @@
 .pricing-area-card {
-  @apply rounded-2xl p-9 xl:p-7 sm:p-6 xs:p-5 border border-white/10 bg-[#202020]/85;
+  @apply rounded-2xl p-8 sm:p-6 xs:p-5 border border-white/10 bg-[#202020]/85;
 
   .top-row {
     @apply flex justify-between items-start sm:flex-wrap mb-14 sm:mb-8;
 
     &--left {
-      @apply w-1/2 sm:w-4/5;
+      @apply w-2/5 sm:w-4/5;
 
       .title-text {
         @apply text-[28px] xl:text-[24px] md:text-lg sm:text-[15.5px] leading-[44px] md:leading-8 sm:leading-7 text-white font-medium mb-6;
@@ -30,7 +30,7 @@
   }
 
   .pricing-plans {
-    @apply grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-flow-col md:grid-flow-row gap-5 xl:gap-3 mb-8 sm:mb-3;
+    @apply grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-flow-col md:grid-flow-row gap-4 xl:gap-3;
   }
 
   .custom-pricing {

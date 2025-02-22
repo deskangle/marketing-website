@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { WorkCard } from "@/app/_components";
+import { WorkCard, ProjectCard } from "@/app/_components";
 import { IWorkType } from "@/app/_types";
 import {
   ProjectOne,
@@ -17,9 +17,27 @@ import "./WorkSection.scss";
 const WorkSection = () => {
   const workList: IWorkType[] = [
     {
-      image: ProjectSix,
-      brand: "BudgitUs",
-      description: "Budgit, a dynamic data based startup",
+      image: ProjectOne,
+      brand: "Gradely LMS",
+      description: "Gradely is a pioneering digital education startup",
+      link: "https://gradely.co",
+    },
+    {
+      image: ProjectTwo,
+      brand: "Class54 Education",
+      description: "Class54 is an innovative Ed-Tech startup.",
+      link: "https://class54.com",
+    },
+    {
+      image: ProjectThree,
+      brand: "PaveHQ",
+      description: "Pave is a transformative Ed-Tech platform",
+      link: "https://pavehq.com",
+    },
+    {
+      image: ProjectFour,
+      brand: "Vesicash Escrow & MoR",
+      description: "Vesicash, a dynamic FinTech startup",
       link: "https://vesicash.com",
     },
     {
@@ -30,28 +48,10 @@ const WorkSection = () => {
       link: "https://pavehq.com",
     },
     {
-      image: ProjectFour,
-      brand: "Vesicash Escrow & MoR",
-      description: "Vesicash, a dynamic FinTech startup",
+      image: ProjectSix,
+      brand: "BudgitUs",
+      description: "Budgit, a dynamic data based startup",
       link: "https://vesicash.com",
-    },
-    {
-      image: ProjectThree,
-      brand: "PaveHQ",
-      description: "Pave is a transformative Ed-Tech platform",
-      link: "https://pavehq.com",
-    },
-    {
-      image: ProjectTwo,
-      brand: "Class54 Education",
-      description: "Class54 is an innovative Ed-Tech startup.",
-      link: "https://class54.com",
-    },
-    {
-      image: ProjectOne,
-      brand: "Gradely LMS",
-      description: "Gradely is a pioneering digital education startup",
-      link: "https://gradely.co",
     },
   ];
 
@@ -99,7 +99,14 @@ const WorkSection = () => {
           </motion.div>
         </div>
 
-        {/* WORK ITEMS */}
+        {/* PROJECT LIST SECTION */}
+        {/* <div className="project-list-section">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div> */}
+
         <div className="work-items">
           <div className="work-column work-column--top">
             {getEvenNumberedWorks().map((work: IWorkType, index: number) => (

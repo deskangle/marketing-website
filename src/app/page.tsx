@@ -26,16 +26,16 @@ export default function Home() {
       <MissionSection />
 
       {/* STATS SECTION */}
-      <StatSection />
+      {/* <StatSection /> */}
 
       {/* WORK SECTION */}
       <WorkSection />
 
-      {/* PRICING SECTION */}
-      <PricingSection />
-
       {/* SERVICE SECTION */}
       <ServiceSection />
+
+      {/* PRICING SECTION */}
+      <PricingSection />
 
       {/* TESTIMONIAL SECTION */}
       <TestimonialSection />

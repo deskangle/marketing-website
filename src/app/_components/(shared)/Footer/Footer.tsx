@@ -36,14 +36,14 @@ const Footer = () => {
             {/* ACTION BUTTON ROW */}
             <div className="action-btn-row">
               <Link href="/" className="btn btn-primary-green nav-item-btn">
-                Contact Us
+                Chat on Whatsapp
               </Link>
 
               <Link
                 href="/"
                 className="btn btn-primary-green-outline nav-item-btn"
               >
-                Refer Us
+                Book a call
               </Link>
             </div>
           </div>
@@ -157,9 +157,9 @@ const Footer = () => {
               Terms of use
             </Link>
 
-            <Link href="sitemap" className="nav-item">
+            {/* <Link href="sitemap" className="nav-item">
               Sitemap
-            </Link>
+            </Link> */}
           </div>
 
           <div className="copyright-text">

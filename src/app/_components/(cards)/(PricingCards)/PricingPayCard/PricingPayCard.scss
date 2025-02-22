@@ -1,7 +1,7 @@
 @import "../../../../_assets/scss/colors";
 
 .pricing-pay-card {
-  @apply relative w-full h-auto bg-primary-green p-7 xl:p-5 rounded-2xl;
+  @apply relative w-full h-auto bg-primary-green py-6 px-5 xl:p-5 rounded-2xl;
 
   .form-payment {
     @apply flex flex-col gap-y-6;

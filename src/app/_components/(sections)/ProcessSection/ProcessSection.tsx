@@ -60,7 +60,7 @@ const ProcessSection = () => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         >
           <span className="text-white/45">Collaborative Design Process:</span>{" "}
           {`We dive deep into your brand's essence, ideate innovative solutions,
@@ -78,9 +78,9 @@ const ProcessSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.4,
                   ease: "easeOut",
-                  delay: 0.2 + index * 0.2,
+                  delay: index * 0.1,
                 }}
               >
                 <ProcessCard process={process} counter={index + 1} />

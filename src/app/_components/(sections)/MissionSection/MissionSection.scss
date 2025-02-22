@@ -1,7 +1,7 @@
 @import "../../../_assets/scss/breakpoints.scss";
 
 .mission-section {
-  @apply relative pt-40 md:pt-28 pb-20;
+  @apply relative pt-40 md:pt-28 pb-9;
 
   .mission-section-wrapper {
     @apply flex justify-between items-start;
@@ -15,7 +15,7 @@
     }
 
     .column-header-block {
-      @apply w-[50%] pl-[70px] xl:pl-[50px] lg:pl-[40px] text-[68px] xl:text-[60px] lg:text-[54px] md:text-[58px] sm:text-[50px] leading-[78px] xl:leading-[70px] lg:leading-[64px] sm:leading-[52px] text-white font-black flex flex-col justify-start items-start gap-y-2;
+      @apply w-[50%] pl-[70px] xl:pl-[50px] lg:pl-[40px] text-[78px] xl:text-[60px] lg:text-[54px] md:text-[58px] sm:text-[50px] leading-[88px] xl:leading-[70px] lg:leading-[64px] sm:leading-[52px] text-white font-black flex flex-col justify-start items-start gap-y-2;
 
       @include breakpoint-custom-down(840) {
         @apply md:px-0;
@@ -23,14 +23,14 @@
     }
 
     .column-description {
-      @apply w-[51%] flex flex-col gap-14;
+      @apply w-[51%] flex flex-col gap-12;
 
       @include breakpoint-custom-down(840) {
         @apply w-full pl-[40px] md:pl-0;
       }
 
       &-header {
-        @apply text-[17.75px] lg:text-[17px] md:text-[15.5px] leading-[38px] xl:leading-9 lg:leading-8 sm:leading-[32px] text-white/90;
+        @apply text-lg lg:text-[17px] md:text-[15.5px] leading-[38px] xl:leading-9 lg:leading-8 sm:leading-[32px] text-white/90;
       }
 
       .offer-list {
@@ -40,7 +40,11 @@
           @apply w-full py-5 pb-[18px] px-[22px] lg:p-5 rounded-[15px] bg-[#151515] border border-white/10 text-white/55 transition-all duration-300 ease-in-out flex flex-wrap justify-start items-center gap-2;
 
           .bullet {
-            @apply w-2.5 h-2.5 rounded-full bg-white/35;
+            @apply size-6 min-w-6 min-h-6 rounded-full bg-white/35 flex justify-center items-center;
+
+            .check-icon {
+              @apply size-3.5 text-white font-semibold;
+            }
           }
 
           .title {
@@ -53,10 +57,14 @@
         }
 
         .active-card {
-          @apply bg-white/80 text-black-drop transition duration-300 ease-in-out;
+          @apply bg-white text-black-drop transition duration-300 ease-in-out;
 
           .bullet {
-            @apply bg-dark-grey/55;
+            @apply bg-primary-green/85;
+
+            .check-icon {
+              @apply text-black-drop;
+            }
           }
         }
       }

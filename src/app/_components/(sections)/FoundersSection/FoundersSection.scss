@@ -1,7 +1,7 @@
 @import "../../../_assets/scss/breakpoints.scss";
 
 .avatar-block {
-  @apply mt-36 md:mt-20 sm:mb-3 pl-[70px];
+  @apply mt-32 md:mt-20 sm:mb-3 pl-[70px];
 
   @include breakpoint-custom-down(840) {
     @apply md:px-0;

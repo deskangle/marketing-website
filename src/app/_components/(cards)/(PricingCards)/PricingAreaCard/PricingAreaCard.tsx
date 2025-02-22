@@ -67,7 +67,7 @@ const PricingAreaCard = () => {
       </div>
 
       {/* CUSTOM PRICING */}
-      <div className="custom-pricing">
+      {/* <div className="custom-pricing">
         <div className="primary-text">Want a custom package?</div>
         <div className="secondary-text">Bespoke pricing to your needs</div>
 
@@ -77,7 +77,7 @@ const PricingAreaCard = () => {
             <ArrowRightIcon className="w-5 h-5 text-white" />
           </div>{" "}
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

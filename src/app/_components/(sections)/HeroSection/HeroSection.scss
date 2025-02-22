@@ -13,7 +13,7 @@
         @apply flex flex-col justify-start items-center gap-8 sm:gap-6 mb-2.5 sm:mb-2;
 
         .hero-meta {
-          @apply px-6 xs:px-4 py-[13px] rounded-[40px] bg-dark-grey text-white font-medium text-[14.5px] md:text-[14px] sm:text-[13.5px] xs:text-[13.25px] xs:text-center flex justify-center items-center gap-2;
+          @apply px-6 xs:px-4 py-[13px] rounded-[40px] bg-dark-grey text-white font-medium text-[14.75px] md:text-[14px] sm:text-[13.5px] xs:text-[13.25px] xs:text-center flex justify-center items-center gap-2;
 
           .check-indicator {
             @apply w-6 lg:w-[22px] sm:w-[19px] h-6 lg:h-[22px] sm:h-[19px] rounded-full bg-primary-green flex justify-center items-center;
@@ -25,7 +25,7 @@
         }
 
         .hero-headline {
-          @apply text-transparent w-[76%] xl:w-[84%] lg:w-[94%] sm:w-[96%] xs:w-full text-[60px] lg:text-[48px] md:text-[38px] sm:text-[32px] xs:text-[30px] leading-[74px] lg:leading-[70px] md:leading-[58px] sm:leading-[50px] xs:leading-[48px] text-center font-bold bg-clip-text;
+          @apply text-transparent w-[78%] xl:w-[84%] lg:w-[94%] sm:w-[96%] xs:w-full text-[60px] lg:text-[48px] md:text-[38px] sm:text-[32px] xs:text-[30px] leading-[74px] lg:leading-[70px] md:leading-[58px] sm:leading-[50px] xs:leading-[48px] text-center font-bold bg-clip-text;
           background-image: linear-gradient(
             90deg,
             rgba(255, 255, 255, 0.1),
@@ -45,17 +45,17 @@
       }
 
       .hero-tagline {
-        @apply w-[60%] xl:w-[70%] lg:w-4/5 md:w-[92%] sm:w-[96%] mx-auto text-center text-lg lg:text-[17px] sm:text-[15.5px] xs:text-[14.75px] leading-[34px] lg:leading-[32px] sm:leading-[31px] xs:leading-[30px] text-white/75 mb-10 sm:mb-6;
+        @apply w-[55%] xl:w-[70%] lg:w-4/5 md:w-[92%] sm:w-[96%] mx-auto text-center text-lg lg:text-[17px] sm:text-[15.5px] xs:text-[14.75px] leading-[34px] lg:leading-[32px] sm:leading-[31px] xs:leading-[30px] text-white/75 mb-10 sm:mb-6;
       }
 
       .action-row {
         @apply flex sm:flex-col justify-center sm:justify-start items-start sm:items-center gap-10 lg:gap-8 sm:gap-6 sm:w-full;
 
         .btn {
-          @apply w-[240px] lg:w-[220px] sm:w-4/5 xs:w-[90%] h-[58px] lg:h-[53px] sm:h-[55px];
+          @apply w-[300px] lg:w-[220px] sm:w-4/5 xs:w-[90%] h-[58px] lg:h-[53px] sm:h-[55px];
 
           &.btn-primary-green-outline {
-            @apply w-[250px] lg:w-[230px] sm:w-4/5 xs:w-[90%] flex justify-between sm:justify-center items-center;
+            @apply w-[300px] lg:w-[230px] sm:w-4/5 xs:w-[90%] flex justify-between sm:justify-center items-center;
 
             .people-row {
               @apply relative flex justify-end items-center;

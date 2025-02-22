@@ -2,7 +2,7 @@
   @apply rounded-2xl h-[546px] bg-white flex flex-col justify-between;
 
   .pricing-feature-card {
-    @apply p-7 xl:p-5 sm:p-6;
+    @apply py-6 px-5 xl:p-5 sm:p-6;
 
     .title-text {
       @apply text-3xl xl:text-2xl sm:text-[28px] leading-[40px] mb-7 text-black-drop font-medium;

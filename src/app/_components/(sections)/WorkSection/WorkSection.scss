@@ -1,5 +1,5 @@
 .work-section {
-  @apply pt-32 md:pt-24 pb-20 md:pb-12;
+  @apply pt-32 md:pt-24 pb-20 md:pb-4;
 
   .top-header-row {
     @apply flex flex-col justify-center items-center gap-y-6 mb-24 sm:mb-20;
@@ -27,5 +27,9 @@
     .work-column--bottom {
       @apply relative top-[70px] md:top-0;
     }
+  }
+
+  .project-list-section {
+    @apply grid grid-cols-2 gap-x-8 gap-y-9;
   }
 }

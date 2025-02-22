@@ -60,7 +60,7 @@ const TopBar = () => {
         </nav>
 
         <Link href="/#pricing" className="btn btn-primary-green nav-item-btn">
-          Get Started
+          Let's talk
         </Link>
 
         {/* HAMBURGER MENU */}

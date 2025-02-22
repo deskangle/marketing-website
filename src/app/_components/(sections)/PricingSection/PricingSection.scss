@@ -1,5 +1,5 @@
 .pricing-section {
-  @apply pt-36 md:pt-24 pb-12;
+  @apply pt-36 md:pt-24 pb-12 md:pb-7;
 
   .top-header-row {
     @apply flex flex-col justify-center items-center gap-y-6 mb-24 sm:mb-20;
@@ -21,11 +21,11 @@
     @apply flex lg:flex-wrap justify-between items-start lg:gap-y-8;
 
     &--left {
-      @apply w-[73%] lg:w-full;
+      @apply mx-auto w-full lg:w-full;
     }
 
     &--right {
-      @apply w-[25%] lg:w-full flex flex-col justify-start gap-y-7;
+      @apply w-[23%] lg:w-full flex flex-col justify-start gap-y-7;
     }
   }
 }
