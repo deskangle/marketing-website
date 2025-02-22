@@ -45,7 +45,9 @@ const CTASection = () => {
         </div>
 
         <div className="primary-action-row">
-          <div className={`left-column ${inter.className}`}>Let's Talk!</div>
+          <div
+            className={`left-column ${inter.className}`}
+          >{`Let's Talk!`}</div>
 
           <div className="right-column">
             <AnimatedTooltip items={people} />

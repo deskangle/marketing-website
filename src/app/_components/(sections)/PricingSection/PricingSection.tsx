@@ -1,11 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  PricingAreaCard,
-  PricingSlotCard,
-  PricingFeatureCard,
-} from "@/app/_components";
+import { PricingAreaCard } from "@/app/_components";
 import { motion } from "framer-motion";
 import "./PricingSection.scss";
 
@@ -57,26 +53,6 @@ const PricingSection = () => {
           >
             <PricingAreaCard />
           </motion.div>
-
-          {/* <div className="pricing-area--right">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-            >
-              <PricingSlotCard />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-            >
-              <PricingFeatureCard />
-            </motion.div>
-          </div> */}
         </div>
       </div>
     </div>

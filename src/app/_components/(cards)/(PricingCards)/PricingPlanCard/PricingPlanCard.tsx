@@ -40,7 +40,7 @@ const PricingPlanCard = ({
         <div className="plan-amount-meta"> per month</div>
       </div>
 
-      <div className="description-title">What's Included:</div>
+      <div className="description-title">{`What's Included:`}</div>
 
       <ul className="plan-features">
         {pricing.features.map((feature: string, index: number) => (
