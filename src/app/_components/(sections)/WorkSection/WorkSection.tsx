@@ -19,39 +19,44 @@ const WorkSection = () => {
     {
       image: ProjectOne,
       brand: "Gradely LMS",
-      description: "Gradely is a pioneering digital education startup",
+      description:
+        "Gradely LMS is an educational platform designed to personalize learning resources, ensuring that every student has the opportunity to excel academically.",
       link: "https://gradely.co",
     },
     {
       image: ProjectTwo,
       brand: "Class54 Education",
-      description: "Class54 is an innovative Ed-Tech startup.",
-      link: "https://class54.com",
-    },
-    {
-      image: ProjectThree,
-      brand: "PaveHQ",
-      description: "Pave is a transformative Ed-Tech platform",
-      link: "https://pavehq.com",
-    },
-    {
-      image: ProjectFour,
-      brand: "Vesicash Escrow & MoR",
-      description: "Vesicash, a dynamic FinTech startup",
-      link: "https://vesicash.com",
-    },
-    {
-      image: ProjectFive,
-      brand: "Glaxe",
       description:
-        "Pave is a transformative Ed-Tech platform with a bold mission",
-      link: "https://pavehq.com",
+        "Class54 is an Ed-Tech startup specialized in curating an extensive database of examination questions and answers, covering a wide range of standardized tests.",
+      link: "https://class54.com",
     },
     {
       image: ProjectSix,
       brand: "BudgitUs",
-      description: "Budgit, a dynamic data based startup",
+      description:
+        "Budgit is a leading research and civic tech organization focused on co-creating solutions with local communities on public resource efficiency, equity and inclusion.",
+      link: "https://budgit.us",
+    },
+    {
+      image: ProjectFour,
+      brand: "Vesicash Technologies",
+      description:
+        "Vesicash is a FinTech startup simplifying online global payments. They specialize in merchant of record services, handling local transactions, USD, and GBP.",
       link: "https://vesicash.com",
+    },
+    {
+      image: ProjectThree,
+      brand: "PaveHQ",
+      description:
+        "Pave streamlines access to international education and career pathways for African students. Their centralized platform connects students to global institutions and programs",
+      link: "https://pavehq.com",
+    },
+    {
+      image: ProjectFive,
+      brand: "Golden Penny Festival",
+      description:
+        "The Golden Penny Soup Festival is a themed event that invites food enthusiasts to a celebration of soups with culinary master classes and vendor opportunities.",
+      link: "https://pavehq.com",
     },
   ];
 
@@ -99,14 +104,6 @@ const WorkSection = () => {
           </motion.div>
         </div>
 
-        {/* PROJECT LIST SECTION */}
-        {/* <div className="project-list-section">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </div> */}
-
         <div className="work-items">
           <div className="work-column work-column--top">
             {getEvenNumberedWorks().map((work: IWorkType, index: number) => (
@@ -132,20 +129,21 @@ const WorkSection = () => {
             ))}
           </div>
         </div>
+      </div>
 
-        <div className="work-items !hidden md:!flex md:mt-5">
-          <div className="work-column work-column--bottom">
-            {getOddNumberedWorks().map((work: IWorkType, index: number) => (
+      <div className="work-items-mobile">
+        {[...getEvenNumberedWorks(), ...getOddNumberedWorks()].map(
+          (work: IWorkType, index: number) => (
+            <div className="work-column" key={index}>
               <WorkCard
-                key={index}
                 image={work.image}
                 brand={work.brand}
                 description={work.description}
                 link={work.link}
               />
-            ))}
-          </div>
-        </div>
+            </div>
+          )
+        )}
       </div>
     </div>
   );

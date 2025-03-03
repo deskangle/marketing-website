@@ -1,11 +1,23 @@
 .video-section {
-  @apply relative;
+  @apply relative pb-12 md:pb-4 md:pt-4;
 
   .video-wrapper {
-    @apply relative mx-auto w-full overflow-hidden h-[85vh] rounded-[40px];
+    @apply relative mx-auto w-4/5 lg:w-[90%] md:w-full overflow-hidden h-auto rounded-[40px] md:rounded-[24px] sm:rounded-[12px];
 
     video {
-      @apply h-full w-full object-fill;
+      @apply inset-0 h-full w-full object-cover;
+    }
+
+    .video-overlay {
+      @apply absolute left-0 top-0 w-full h-full bg-dark-grey/30;
+
+      .action-wrapper {
+        @apply w-full h-full relative flex justify-center items-center;
+      }
+
+      .video-action {
+        @apply absolute w-[105px] lg:w-[90px] sm:w-[80px] h-[105px] lg:h-[90px] sm:h-[80px] rounded-full cursor-pointer flex justify-center items-center border border-white/20 bg-dark-grey/85 transition duration-300 ease-in-out hover:scale-110 hover:bg-dark-grey/70;
+      }
     }
   }
 }

@@ -14,7 +14,7 @@ const config: Config = {
       lg: { max: "1023px" },
       md: { max: "768px" },
       sm: { max: "639px" },
-      xs: { max: "440px" },
+      xs: { max: "450px" },
     },
 
     extend: {
@@ -58,12 +58,32 @@ const config: Config = {
             opacity: "1",
           },
         },
+
+        "drift-right": {
+          from: {
+            marginRight: "-50%",
+          },
+          to: {
+            marginRight: "0",
+          },
+        },
+
+        "drift-left": {
+          from: {
+            marginLeft: "-50%",
+          },
+          to: {
+            marginLeft: "0",
+          },
+        },
       },
       animation: {
         "fade-in": "fade-in 0.3s ease-in-out",
         "zoom-in": "zoom-in 0.5s ease-in-out",
-        "drift-down": "drift-down 0.4s ease-in-out forwards",
         "slide-down": "slide-down 0.4s ease-in-out",
+        "drift-down": "drift-down 0.4s ease-in-out forwards",
+        "drift-right": "drift-right 0.4s ease-in-out forwards",
+        "drift-left": "drift-left 0.4s ease-in-out forwards",
       },
     },
 

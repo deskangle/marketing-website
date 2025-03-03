@@ -25,16 +25,16 @@ const testimonialDataset = [
       "https://res.cloudinary.com/richy-jones/image/upload/v1736262811/Femi.jpg",
     isVideo: false,
   },
-  {
-    name: "Smith Johnson",
-    role: "Product Manager, InnovateX",
-    quote:
-      "I can’t recommend this enough. It’s the best investment I’ve made in my professional career. The hands-on approach and real-world applications make this course stand out.",
-    avatar:
-      "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMwfHxhdmF0YXJ8ZW58MHx8MHx8fDA%3D",
-    videoThumbnail: VideoTestimonialOne,
-    isVideo: false,
-  },
+  // {
+  //   name: "Smith Johnson",
+  //   role: "Product Manager, InnovateX",
+  //   quote:
+  //     "I can’t recommend this enough. It’s the best investment I’ve made in my professional career. The hands-on approach and real-world applications make this course stand out.",
+  //   avatar:
+  //     "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMwfHxhdmF0YXJ8ZW58MHx8MHx8fDA%3D",
+  //   videoThumbnail: VideoTestimonialOne,
+  //   isVideo: false,
+  // },
   {
     name: "Imole Oluyemi",
     role: "Product Lead, Class54 / Techhaven Africa",
@@ -62,16 +62,16 @@ const testimonialDataset = [
       "https://res.cloudinary.com/richy-jones/image/upload/v1703514595/oluwaseyi.jpg",
     isVideo: false,
   },
-  {
-    name: "Andre Coleman",
-    role: "Creative director, LogoVerily",
-    quote:
-      "From a memorable logo to a relatable brand story, Deskangle's branding experience captured our vision perfectly and helped increase brand recognition by 40%. Would be so proud to recommend.",
-    avatar:
-      "https://res.cloudinary.com/richy-jones/image/upload/v1736269719/andre-coleman_1.png",
-    videoThumbnail: VideoTestimonialTwo,
-    isVideo: false,
-  },
+  // {
+  //   name: "Andre Coleman",
+  //   role: "Creative director, LogoVerily",
+  //   quote:
+  //     "From a memorable logo to a relatable brand story, Deskangle's branding experience captured our vision perfectly and helped increase brand recognition by 40%. Would be so proud to recommend.",
+  //   avatar:
+  //     "https://res.cloudinary.com/richy-jones/image/upload/v1736269719/andre-coleman_1.png",
+  //   videoThumbnail: VideoTestimonialTwo,
+  //   isVideo: false,
+  // },
   {
     name: "Marvelous Enofe",
     role: "Founder, MarvCollections",
@@ -81,15 +81,15 @@ const testimonialDataset = [
       "https://res.cloudinary.com/richy-jones/image/upload/v1740012291/marvy_aglttc.png",
     isVideo: false,
   },
-  {
-    name: "William Davis",
-    role: "Founder, SmartTech Solutions",
-    quote:
-      "This course is a must for anyone looking to succeed in today’s competitive market. The focus on technology integration and innovation is particularly relevant for entrepreneurs in the digital space.",
-    avatar:
-      "https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww",
-    isVideo: false,
-  },
+  // {
+  //   name: "William Davis",
+  //   role: "Founder, SmartTech Solutions",
+  //   quote:
+  //     "This course is a must for anyone looking to succeed in today’s competitive market. The focus on technology integration and innovation is particularly relevant for entrepreneurs in the digital space.",
+  //   avatar:
+  //     "https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww",
+  //   isVideo: false,
+  // },
 ];
 
 const TestimonialSection = () => {

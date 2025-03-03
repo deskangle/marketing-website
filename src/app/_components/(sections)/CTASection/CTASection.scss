@@ -1,15 +1,15 @@
 .cta-section {
-  @apply pt-32 md:pt-24 mb-40 lg:mb-32 md:mb-28;
+  @apply pt-32 md:pt-24 mb-40 lg:mb-32 md:mb-28 sm:mb-16;
 
   .primary-text {
-    @apply text-white font-bold text-[86px] leading-[128px];
+    @apply text-white font-bold text-[86px] xl:text-[76px] lg:text-[70px] md:text-[54px] sm:text-[44px] xs:text-[32px] leading-[128px] xl:leading-[116px] lg:leading-[100px] md:leading-[82px] sm:leading-[64px] xs:leading-[50px];
   }
 
   .primary-action-row {
-    @apply flex justify-start items-center gap-12;
+    @apply flex xs:flex-col justify-start xs:justify-start items-center xs:items-start gap-12 md:gap-8;
 
     .left-column {
-      @apply text-primary-green font-bold text-[86px] leading-[90px] border-b border-b-primary-green;
+      @apply text-primary-green font-bold text-[86px] xl:text-[76px] lg:text-[70px] md:text-[54px] sm:text-[44px] xs:text-[32px] leading-[90px] lg:leading-[80px] md:leading-[76px] sm:leading-[64px] xs:leading-[50px] border-b border-b-primary-green;
     }
 
     .right-column {
@@ -18,14 +18,14 @@
   }
 
   .primary-action {
-    @apply flex justify-start items-center gap-4 mt-7;
+    @apply flex justify-start items-center gap-4 sm:gap-3 mt-7;
 
     .icon {
-      @apply text-white size-8 min-w-8 min-h-8;
+      @apply text-white size-8 lg:size-7 md:size-6 sm:size-5 min-w-8 lg:min-w-7 md:min-w-6 sm:min-w-5 min-h-8 lg:min-h-7 md:min-h-6 sm:min-h-5;
     }
 
     .text {
-      @apply text-white font-medium text-[24px] leading-[38px] transition-all duration-300 ease-in-out hover:text-primary-green;
+      @apply text-white font-medium text-[24px] lg:text-[22px] md:text-[20px] sm:text-[17px] xs:text-[16.5px] leading-[38px] transition-all duration-300 ease-in-out hover:text-primary-green;
     }
   }
 }

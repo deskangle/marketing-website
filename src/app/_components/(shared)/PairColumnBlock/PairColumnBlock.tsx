@@ -2,7 +2,6 @@
 
 import React, { ReactNode } from "react";
 import { Inter } from "next/font/google";
-import { motion } from "framer-motion";
 import "./PairColumnBlock.scss";
 
 const inter = Inter({

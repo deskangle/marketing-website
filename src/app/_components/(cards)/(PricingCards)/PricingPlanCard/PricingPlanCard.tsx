@@ -28,7 +28,7 @@ const PricingPlanCard = ({
       className={`pricing-plan-card ${pricing.isSelected && "is-selected"}`}
       onClick={() => updatePlan(pricing.type)}
     >
-      <div className="plan-toggler"></div>
+      {/* <div className="plan-toggler"></div> */}
 
       <div className="plan-title">{pricing.type}</div>
 

@@ -39,9 +39,14 @@ const PricingAreaCard = () => {
             Choose the relevant plan to build and grow your business
           </div>
 
+          <div className="title-text title-text-mobile">
+            <div>Choose the relevant plan</div>
+            <div>to build and grow your business</div>
+          </div>
+
           <div className="action-row">
             <span>Can’t decide?</span>{" "}
-            <Link href="">Book a 15-minute call</Link>
+            <Link href="">Book a Discovery call today!</Link>
           </div>
         </div>
 

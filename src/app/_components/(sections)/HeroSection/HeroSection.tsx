@@ -3,9 +3,10 @@ import React from "react";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
-import { CheckIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { StarIcon } from "@heroicons/react/24/solid";
 import { GridLines, ClientSection } from "@/app/_components";
-import { AvatarOne, AvatarTwo, AvatarThree } from "@/app/_assets";
+import { FireIcon } from "@/app/_assets";
 import { motion } from "framer-motion";
 import "./HeroSection.scss";
 
@@ -30,14 +31,14 @@ const HeroSection = () => {
             {/* HERO META */}
             <div className="hero-meta">
               <div className="check-indicator">
-                <CheckIcon />
+                <Image src={FireIcon} alt="fire-icon" width={26} height={26} />
               </div>
-              <div>{`Dedicated team of Pro Designers & Engineers`}</div>
+              <div>{`2 of 5 slots open. Book a discovery call today!`}</div>
             </div>
 
             {/* HERO HEADLINE */}
             <div className={`hero-headline ${inter.className}`}>
-              {`Tired of Slow SaaS Product Cycles? We Speed Up Innovation.`}
+              {`Transform your SaaS Ideas into Business Solutions.`}
             </div>
           </motion.div>
 
@@ -60,44 +61,49 @@ const HeroSection = () => {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
           >
-            <Link href="/#pricing" className="btn btn-primary-green">
-              <div className="btn-text">Explore our Solutions</div>{" "}
+            <Link href="/" className="btn btn-primary-green">
+              <div className="btn-text">Book a Discovery Call</div>{" "}
               <div className="btn-icon">
-                <ArrowRightIcon className="w-5 h-5 text-white" />
+                <ArrowRightIcon className="w-5 h-5 text-white animate-pulse" />
               </div>{" "}
             </Link>
 
-            <button className="btn btn-primary-green-outline">
-              <div className="text">Book a 15-min Call</div>
+            <div className="project-stat-card">
               <div className="people-row">
-                <div className="people">
+                <div className="people-item">
                   <Image
-                    src={AvatarOne}
-                    alt="efemena-elvis"
+                    src="https://res.cloudinary.com/richy-jones/image/upload/v1703514594/imole.jpg"
+                    alt="imole-oluyemi"
                     width="40"
                     height="40"
                   ></Image>
                 </div>
 
-                <div className="people moveable">
+                <div className="people-item moveable">
                   <Image
-                    src={AvatarTwo}
-                    alt="daniel-akinleye"
+                    src="https://res.cloudinary.com/richy-jones/image/upload/v1703514594/tomisin.jpg"
+                    alt="tomisin"
                     width="40"
                     height="40"
                   ></Image>
                 </div>
 
-                <div className="people">
-                  <Image
-                    src={AvatarThree}
-                    alt="ehiz-eneboh"
-                    width="40"
-                    height="40"
-                  ></Image>
+                <div className="people-item">
+                  <div className="text">50+</div>
                 </div>
               </div>
-            </button>
+
+              <div className="value-row">
+                <div className="stars-row">
+                  {Array(5)
+                    .fill("_")
+                    .map((_, index) => (
+                      <StarIcon key={index} className="star-icon" />
+                    ))}
+                </div>
+                <div className="copy-text">50+ projects completed</div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

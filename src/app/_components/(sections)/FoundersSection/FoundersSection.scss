@@ -1,11 +1,11 @@
 @import "../../../_assets/scss/breakpoints.scss";
 
 .avatar-block {
-  @apply mt-32 md:mt-20 sm:mb-3 pl-[70px];
+  @apply mt-32 md:mt-20 sm:mb-3 pl-[70px] xl:pl-[50px] lg:pl-[40px] md:pl-[34px] sm:pl-[26px] xs:pl-[15px];
 
-  @include breakpoint-custom-down(840) {
-    @apply md:px-0;
-  }
+  // @include breakpoint-custom-down(840) {
+  //   @apply md:px-0;
+  // }
 
   .avatar-row {
     @apply flex justify-start items-center relative;

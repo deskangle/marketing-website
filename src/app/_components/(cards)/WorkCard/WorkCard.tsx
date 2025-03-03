@@ -26,7 +26,14 @@ function WorkCard({ image, brand, description, link }: IWorkType) {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <div className="title-text">{brand}</div>
+        <div className="title-row">
+          <div className="title-text">{brand}</div>
+
+          <button className="btn btn-sm btn-primary-green-outline">
+            Visit Site
+          </button>
+        </div>
+
         <div className="description-text">{description}</div>
       </motion.div>
     </div>

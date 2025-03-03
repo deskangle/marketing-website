@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { GradelyMockup } from "@/app/_assets";
+
 import "./ProjectCard.scss";
 
 const ProjectCard = () => {
   return (
     <div className="project-card">
-      <Image src={GradelyMockup} alt="gradely-mockup" />
+      <Image src="" alt="gradely-mockup" />
 
       <div className="project-card-display">
         <div className="browser-content">

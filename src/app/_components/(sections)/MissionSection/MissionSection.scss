@@ -1,7 +1,7 @@
 @import "../../../_assets/scss/breakpoints.scss";
 
 .mission-section {
-  @apply relative pt-40 md:pt-28 pb-9;
+  @apply relative pt-40 md:pt-32 pb-9;
 
   .mission-section-wrapper {
     @apply flex justify-between items-start;
@@ -15,29 +15,25 @@
     }
 
     .column-header-block {
-      @apply w-[50%] pl-[70px] xl:pl-[50px] lg:pl-[40px] text-[78px] xl:text-[60px] lg:text-[54px] md:text-[58px] sm:text-[50px] leading-[88px] xl:leading-[70px] lg:leading-[64px] sm:leading-[52px] text-white font-black flex flex-col justify-start items-start gap-y-2;
-
-      @include breakpoint-custom-down(840) {
-        @apply md:px-0;
-      }
+      @apply w-[50%] pl-[70px] xl:pl-[50px] lg:pl-[40px] md:pl-[34px] sm:pl-[26px] xs:pl-[15px] text-[78px] xl:text-[68px] lg:text-[60px] md:text-[74px] sm:text-[58px] xs:text-[50px] leading-[92px] xl:leading-[96px] lg:leading-[84px] md:leading-[84px] sm:leading-[72px] xs:leading-[64px] text-white font-black flex flex-col justify-start items-start gap-y-2;
     }
 
     .column-description {
       @apply w-[51%] flex flex-col gap-12;
 
       @include breakpoint-custom-down(840) {
-        @apply w-full pl-[40px] md:pl-0;
+        @apply w-full pl-[40px] md:pl-[34px] sm:pl-[26px] xs:pl-[15px];
       }
 
       &-header {
-        @apply text-lg lg:text-[17px] md:text-[15.5px] leading-[38px] xl:leading-9 lg:leading-8 sm:leading-[32px] text-white/90;
+        @apply text-lg lg:text-[17px] sm:text-base xs:text-[14.75px] leading-[38px] xl:leading-9 lg:leading-8 sm:leading-[32px] xs:leading-[29px] text-white/90;
       }
 
       .offer-list {
         @apply flex flex-col justify-start items-start gap-4;
 
         .offer-card {
-          @apply w-full py-5 pb-[18px] px-[22px] lg:p-5 rounded-[15px] bg-[#151515] border border-white/10 text-white/55 transition-all duration-300 ease-in-out flex flex-wrap justify-start items-center gap-2;
+          @apply w-full py-5 pb-[18px] px-[22px] lg:p-5 sm:px-4 xs:px-3.5 sm:py-4 rounded-[15px] bg-[#151515] border border-white/10 text-white/55 transition-all duration-300 ease-in-out flex flex-wrap justify-start items-center gap-2;
 
           .bullet {
             @apply size-6 min-w-6 min-h-6 rounded-full bg-white/35 flex justify-center items-center;
@@ -48,11 +44,11 @@
           }
 
           .title {
-            @apply font-semibold text-[15px] lg:text-[14.75px] sm:text-[14.5px];
+            @apply font-semibold text-base lg:text-[15px] sm:text-[14.5px] xs:text-[14px];
           }
 
           .description {
-            @apply text-[14.5px] sm:text-[14px] transition duration-100 ease-in-out;
+            @apply text-[14.5px] md:text-[15px] sm:text-[14px] transition duration-100 ease-in-out;
           }
         }
 

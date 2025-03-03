@@ -47,7 +47,7 @@ const ProcessCard = ({
           </div>
         ) : (
           <Link href="/#pricing" className="btn btn-secondary">
-            <div className="btn-text">Get Started</div>{" "}
+            <div className="btn-text">Book a Discovery Call</div>{" "}
             <div className="btn-icon">
               <ArrowRightIcon className="w-5 h-5 text-white" />
             </div>{" "}

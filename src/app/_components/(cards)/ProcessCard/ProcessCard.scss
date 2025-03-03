@@ -2,7 +2,7 @@
   @apply border border-white/10 bg-dark-grey/70 p-8 xl:p-6 sm:p-5 rounded-lg shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5;
 
   .process-title-row {
-    @apply flex justify-start items-center gap-x-2 sm:gap-x-1.5 text-2xl xl:text-xl sm:text-[18.5px] mb-8;
+    @apply flex justify-start items-center gap-x-2 sm:gap-x-1.5 text-2xl xl:text-xl sm:text-[19px] xs:text-[18px] mb-8 sm:mb-6;
 
     .process-counter {
       @apply text-white/40;
@@ -13,12 +13,12 @@
     }
 
     .process-title {
-      @apply text-white/90 font-medium text-[22px] xl:text-xl sm:text-[18.5px];
+      @apply text-white/90 font-medium text-[22px] xl:text-xl sm:text-[19px] xs:text-[18px];
     }
   }
 
   .process-description {
-    @apply text-[15px] xl:text-[14px] sm:text-[13.75px] leading-[24px] sm:leading-[27px] text-white/55 mb-7;
+    @apply text-[15px] xl:text-[14px] sm:text-[15px] xs:text-[14.5px] leading-[24px] sm:leading-[27px] text-white/70 mb-7;
   }
 
   .process-highlights {
@@ -32,7 +32,7 @@
       }
 
       &-text {
-        @apply text-[13px] xl:text-[12.5px] sm:text-[12px] uppercase text-white/65;
+        @apply text-[13px] xl:text-[12.5px] sm:text-[14px] xs:text-[13.5px] uppercase text-white/75 xs:tracking-wide;
       }
     }
   }

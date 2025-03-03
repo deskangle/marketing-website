@@ -84,13 +84,14 @@ const AnimatedTooltip = ({
               </motion.div>
             )}
           </AnimatePresence>
+
           <Image
             onMouseMove={handleMouseMove}
             height={100}
             width={100}
             src={item.image}
             alt={item.name}
-            className="object-cover !m-0 !p-0 object-top rounded-full h-[90px] sm:h-[80px] w-[90px] sm:w-[80px] border-[3px] sm:border group-hover:scale-110 group-hover:z-30 border-white/75 relative transition duration-500 ease-in-out"
+            className="object-cover !m-0 !p-0 object-top rounded-full h-[90px] lg:h-[86px] md:h-[76px] sm:h-[72px] xs:h-[68px] w-[90px] lg:w-[86px] md:w-[76px] sm:w-[72px] xs:w-[68px] border-[3px] sm:border group-hover:scale-110 group-hover:z-30 border-white/75 relative transition duration-500 ease-in-out"
           />
         </motion.div>
       ))}

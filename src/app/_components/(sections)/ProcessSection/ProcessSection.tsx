@@ -63,8 +63,8 @@ const ProcessSection = () => {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         >
           <span className="text-white/45">Collaborative Design Process:</span>{" "}
-          {`We dive deep into your brand's essence, ideate innovative solutions,
-          and meticulously craft exceptional experiences for success.`}
+          {`We dive deep into your brand's essence, ideate solutions
+          and craft exceptional experiences for success.`}
         </motion.div>
       </PairColumnBlock>
 

@@ -1,6 +1,4 @@
-export { default as DeskangleLogoLight } from "./images/deskangle-logo-light.png";
 export { default as DeskangleLogoDark } from "./images/deskangle-logo-dark.png";
-
 export { default as AgencyVideo } from "./videos/agency.mp4";
 
 // CLIENTS COLORS
@@ -26,26 +24,13 @@ export { default as ProjectTwo } from "./images/projects/class54-one.png";
 export { default as ProjectThree } from "./images/projects/pave-one.png";
 export { default as ProjectFour } from "./images/projects/vesicash-one.png";
 export { default as ProjectFive } from "./images/projects/gp-one.png";
-export { default as ProjectSix } from "./images/projects/project-1.jpg";
-
-export { default as GradelyMockup } from "./images/projects/gradely-mockup.webp";
+export { default as ProjectSix } from "./images/projects/budgit-one.png";
 
 // TESTIMONIALS
 export { default as VideoTestimonialOne } from "./images/testimonials/video-testimonial-one.jpg";
 export { default as VideoTestimonialTwo } from "./images/testimonials/video-testimonial-two.jpg";
 
-export { default as WhyImage1 } from "./images/why-image-1.png";
-
-// STATS
-export { default as StatOne } from "./images/stat-one-3.png";
-export { default as StatTwo } from "./images/stat-two-1.png";
-export { default as StatThree } from "./images/stat-three-2.png";
-export { default as StatFour } from "./images/stat-four-2.png";
-
 // AVATAR
 export { default as AvatarOne } from "./images/elvis-avatar.png";
 export { default as AvatarTwo } from "./images/daniel-avatar.png";
 export { default as AvatarThree } from "./images/ehiz-avatar.png";
-
-export { default as PickAPlan } from "./images/pick-a-plan.svg";
-export { default as ContactSales } from "./images/contact-sales.svg";

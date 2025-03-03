@@ -18,13 +18,13 @@ const GridLines: React.FC = () => {
   const [verticalLines, setVerticalLines] = useState<number[]>([]);
   const [lightRays, setLightRays] = useState<LightRay[]>([]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      createLightRay();
-    }, 1000); // Adjust the interval for light ray creation
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     createLightRay();
+  //   }, 1000); // Adjust the interval for light ray creation
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const createLightRay = () => {
     const isHorizontal = Math.random() > 0.5; // Randomly choose between horizontal and vertical ray

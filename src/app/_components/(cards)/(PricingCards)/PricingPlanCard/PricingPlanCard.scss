@@ -1,23 +1,23 @@
 .pricing-plan-card {
-  @apply relative rounded-2xl border border-[#404040]/90 p-6 xl:p-[18px] cursor-pointer transition duration-300 ease-in-out hover:bg-primary-green/5 hover:scale-[1.02] first-of-type:scale-[0.94] hover:first-of-type:hover:scale-[0.98] last-of-type:scale-[0.94] hover:last-of-type:hover:scale-[0.98];
+  @apply relative rounded-2xl border border-[#404040]/90 p-6 xl:p-[18px] cursor-pointer transition duration-300 ease-in-out hover:bg-primary-green/5 hover:scale-[1.02] first-of-type:scale-[0.94] sm:first-of-type:scale-[1] hover:first-of-type:hover:scale-[0.98] sm:hover:first-of-type:hover:scale-[1] last-of-type:scale-[0.94] sm:last-of-type:scale-[1] hover:last-of-type:hover:scale-[0.98] sm:hover:last-of-type:hover:scale-[1];
 
   .plan-toggler {
     @apply absolute rounded-full w-4 h-4 border border-[#404040] top-4 right-4;
   }
 
   .plan-title {
-    @apply text-white font-medium text-[17px] xl:text-base sm:text-[17px] mb-4;
+    @apply text-white font-medium text-[17px] xl:text-base sm:text-[17px] xs:text-base mb-4;
   }
 
   .plan-description {
-    @apply text-[13.5px] xl:text-[13px] sm:text-[13.5px] leading-[26px] text-white/75 mb-6;
+    @apply text-[13.5px] xl:text-[13px] sm:text-[14px] leading-[26px] text-white/75 mb-6;
   }
 
   .plan-amount {
     @apply flex justify-start items-end gap-x-1.5 mb-10;
 
     &-text {
-      @apply font-bold text-4xl leading-10 text-primary-green;
+      @apply font-bold text-4xl lg:text-3xl xs:text-[28px] leading-10 text-primary-green;
     }
 
     &-meta {
@@ -33,7 +33,7 @@
     @apply list-disc ml-3 flex flex-col gap-y-2.5;
 
     .feature {
-      @apply text-[13.5px] xl:text-[13px] sm:text-[13.5px] text-white/70 mb-1 last-of-type:mb-0;
+      @apply text-[13.5px] xl:text-[13px] sm:text-[14px] text-white/70 mb-1 last-of-type:mb-0;
     }
   }
 

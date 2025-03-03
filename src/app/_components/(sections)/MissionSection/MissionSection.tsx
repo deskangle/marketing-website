@@ -89,8 +89,8 @@ const MissionSection = () => {
           <div className="column-description">
             <div className="column-description-header">
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               >
@@ -101,8 +101,8 @@ const MissionSection = () => {
 
               <motion.div
                 className="mt-5"
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
               >
@@ -116,8 +116,8 @@ const MissionSection = () => {
                   className={`offer-card ${offer.active && "active-card"}`}
                   key={index}
                   onMouseEnter={() => changeActiveState(index)}
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.1 }}
                   transition={{
                     duration: 0.6,

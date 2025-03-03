@@ -2,18 +2,18 @@
   @apply pt-36 md:pt-24 pb-12 md:pb-7;
 
   .top-header-row {
-    @apply flex flex-col justify-center items-center gap-y-6 mb-24 sm:mb-20;
+    @apply flex flex-col justify-center items-center gap-y-6 md:gap-y-5 mb-24 sm:mb-20;
 
     .primary-text {
       @apply text-center sm:hidden text-[64px] lg:text-[54px] md:text-[40px] sm:text-[32px] text-white/95 font-bold;
     }
 
     .primary-text-mobile {
-      @apply hidden text-nowrap sm:flex sm:flex-col sm:justify-start sm:items-start gap-2 w-full;
+      @apply hidden text-[36px] xs:text-[32px] leading-[44px] xs:leading-[36px] text-nowrap sm:flex sm:flex-col sm:justify-start sm:items-start gap-2 w-full;
     }
 
     .secondary-text {
-      @apply text-center sm:text-left text-white/55 text-2xl lg:text-xl md:text-base sm:text-[15px] leading-[48px] w-full;
+      @apply text-center sm:text-left text-white/55 text-2xl lg:text-xl md:text-[16.5px] sm:text-[16px] xs:text-[15px] leading-[48px] w-full;
     }
   }
 

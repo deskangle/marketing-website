@@ -1,13 +1,13 @@
 .pair-column-block {
   .pair-wrapper {
-    @apply flex justify-start items-start;
+    @apply flex justify-start md:justify-between items-start;
 
     .title-block {
-      @apply w-[3.5%] md:hidden relative top-4 rotate-90 text-nowrap text-[18px] xl:text-sm uppercase text-white/70;
+      @apply w-[3.5%] md:w-[2.5%] relative top-4 sm:top-1.5 rotate-90 text-nowrap text-[18px] xl:text-sm md:text-[17px] sm:text-[14px] md:tracking-wider uppercase text-white/70 sm:text-white/50;
     }
 
     .content-block {
-      @apply w-[96.5%] pb-2 border-l-[0.25px] border-l-white/30 md:border-none;
+      @apply w-[96.5%] md:w-[94.5%] xs:w-[94%] pb-2 border-l-[0.25px] border-l-white/30;
     }
   }
 }

@@ -1,23 +1,31 @@
 .work-card {
-  @apply relative md:flex-shrink-0 w-full md:w-[380px] xs:w-[290px] border border-white/15 bg-dark-grey/70 p-8 lg:p-6 md:p-5 xs:p-4 rounded-lg overflow-hidden shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5 hover:scale-95 sm:hover:scale-100;
+  @apply relative md:flex-shrink-0 w-full md:w-full border border-white/15 bg-dark-grey/70 p-8 lg:p-6 md:p-5 sm:p-4 xs:p-3.5 rounded-lg overflow-hidden shadow-md transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-primary-green/5 hover:scale-[0.98] sm:hover:scale-100;
 
   .image-card {
-    @apply relative w-full min-h-[400px] md:min-h-[360px] xs:min-h-[280px] rounded-lg overflow-hidden;
+    @apply relative w-full h-[360px] xl:h-[340px] lg:h-max rounded-lg overflow-hidden;
 
     img {
-      @apply absolute w-full h-full object-cover;
+      @apply absolute lg:relative md:inset-0 w-full h-auto lg:h-full object-cover;
     }
   }
 
   .work-copy {
-    @apply relative mt-5;
+    @apply relative mt-9 md:mt-6;
 
-    .title-text {
-      @apply text-[23px] lg:text-xl sm:text-lg xs:text-base font-bold mb-2 text-white/90;
+    .title-row {
+      @apply flex justify-between items-center gap-x-4 mb-4 md:mb-5;
+
+      .title-text {
+        @apply text-xl md:text-lg  sm:text-[16.5px] xs:text-[16px] font-extrabold text-white;
+      }
+
+      .btn {
+        @apply px-7 text-[13px] md:text-xs h-[42px] md:h-[40px];
+      }
     }
 
     .description-text {
-      @apply text-[15.5px] lg:text-[14.5px] leading-[26px] lg:leading-[24px] text-white/50;
+      @apply text-[15px] lg:text-[14.5px] md:text-[14.25px] xs:text-[14.5px] leading-[26px] lg:leading-[24px] md:leading-[25.5px] xs:leading-[26px] text-white/85;
     }
   }
 }

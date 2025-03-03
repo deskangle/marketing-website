@@ -1,0 +1,33 @@
+.mobile-menu {
+  @apply fixed inset-0 w-full z-40 bg-black-drop animate-drift-left;
+
+  .menu-wrapper {
+    @apply px-3;
+
+    .menu-top {
+      @apply flex justify-between items-center gap-x-3 relative top-2 py-[20px];
+
+      .brand-logo {
+        @apply w-[130px] h-auto;
+      }
+
+      .close-action {
+        .icon {
+          @apply size-8 min-w-8 min-h-8 text-white/70 font-normal;
+        }
+      }
+    }
+
+    .menu-bottom {
+      @apply h-[86vh] flex flex-col justify-center;
+
+      .nav-items {
+        @apply flex flex-col justify-start items-end gap-y-2.5 -mt-12;
+      }
+
+      a {
+        @apply text-white/75 text-[64px] leading-[64px] font-black;
+      }
+    }
+  }
+}

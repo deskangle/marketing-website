@@ -1,14 +1,12 @@
 import {
   HeroSection,
-  IntroSection,
+  VideoSection,
   MissionSection,
   ServiceSection,
-  StatSection,
   WorkSection,
   CTASection,
   ProcessSection,
   PricingSection,
-  WhySection,
   FAQSection,
   TestimonialSection,
 } from "@/app/_components";
@@ -19,14 +17,11 @@ export default function Home() {
       {/* HERO SECTION */}
       <HeroSection />
 
-      {/* INTRO SECTION */}
-      <IntroSection />
+      {/* VIDEO SECTION */}
+      <VideoSection />
 
       {/* MISSION SECTION */}
       <MissionSection />
-
-      {/* STATS SECTION */}
-      {/* <StatSection /> */}
 
       {/* WORK SECTION */}
       <WorkSection />
@@ -39,9 +34,6 @@ export default function Home() {
 
       {/* TESTIMONIAL SECTION */}
       <TestimonialSection />
-
-      {/* WHY SECTION */}
-      {/* <WhySection /> */}
 
       {/* PROCESS SECTION */}
       <ProcessSection />

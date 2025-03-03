@@ -35,15 +35,11 @@ const Footer = () => {
 
             {/* ACTION BUTTON ROW */}
             <div className="action-btn-row">
-              <Link href="/" className="btn btn-primary-green nav-item-btn">
-                Chat on Whatsapp
-              </Link>
-
               <Link
                 href="/"
                 className="btn btn-primary-green-outline nav-item-btn"
               >
-                Book a call
+                Book a discovery call
               </Link>
             </div>
           </div>

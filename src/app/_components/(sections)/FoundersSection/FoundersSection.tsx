@@ -16,19 +16,22 @@ const people = [
     id: 1,
     name: "Efemena Elvis",
     designation: "Software Engineer",
-    image: AvatarOne,
+    image:
+      "https://res.cloudinary.com/richy-jones/image/upload/v1740994850/elvis-avatar_lbs5pf.png",
   },
   {
     id: 2,
     name: "Daniel Akinleye",
     designation: "Brand/Product Strategist",
-    image: AvatarTwo,
+    image:
+      "https://res.cloudinary.com/richy-jones/image/upload/v1740994850/daniel-avatar_kjrcli.png",
   },
   {
     id: 3,
     name: "Ehiz Eneboh",
     designation: "AI Engineer",
-    image: AvatarThree,
+    image:
+      "https://res.cloudinary.com/richy-jones/image/upload/v1740994850/ehiz-avatar_bzhuje.png",
   },
 ];
 
@@ -41,9 +44,9 @@ const FoundersSection = () => {
           <AnimatedTooltip items={people} />
         </div>
 
-        <div className={`avatar-title ${inter.className}`}>
+        {/* <div className={`avatar-title ${inter.className}`}>
           DESKANGLE CO-FOUNDERS
-        </div>
+        </div> */}
       </div>
     </>
   );
