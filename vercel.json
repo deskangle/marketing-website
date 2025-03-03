@@ -1,9 +1,9 @@
 {
   "redirects": [
     {
-      "source": "https://deskangle.com",
+      "source": "/",
       "destination": "https://www.deskangle.com",
-      "permanent": true
+      "permanent": false
     }
   ]
 }
