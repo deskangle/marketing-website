@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { TopBar, Footer } from "@/app/_components";
+import { TopBar, Footer, ScrollTop } from "@/app/_components";
 
 function BaseLayout({ children }: { children: ReactNode }) {
   return (
@@ -7,6 +7,8 @@ function BaseLayout({ children }: { children: ReactNode }) {
       <TopBar />
       {children}
       <Footer />
+
+      <ScrollTop />
     </div>
   );
 }

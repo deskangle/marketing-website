@@ -5,7 +5,7 @@
     @apply relative w-full h-[360px] xl:h-[340px] lg:h-max rounded-lg overflow-hidden;
 
     img {
-      @apply absolute lg:relative md:inset-0 w-full h-auto lg:h-full object-cover;
+      @apply absolute bg-white/75 lg:relative md:inset-0 w-full h-auto lg:h-full object-cover;
     }
   }
 

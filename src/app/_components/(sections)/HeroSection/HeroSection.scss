@@ -29,7 +29,7 @@
         }
 
         .hero-headline {
-          @apply text-transparent w-[68%] xl:w-[78%] md:w-[90%] sm:w-[96%] xs:w-full text-[66px] xl:text-[54px] lg:text-[48px] md:text-[46px] sm:text-[30px] xs:text-[25.5px] leading-[74px] lg:leading-[66px] md:leading-[58px] sm:leading-[46px] xs:leading-[37px] text-center font-bold bg-clip-text;
+          @apply text-transparent w-[68%] xl:w-[78%] md:w-[90%] sm:w-[96%] xs:w-full text-[66px] xl:text-[54px] lg:text-[48px] md:text-[46px] sm:text-[30px] xs:text-[32px] leading-[74px] lg:leading-[66px] md:leading-[58px] sm:leading-[46px] xs:leading-[44px] text-center font-bold bg-clip-text;
           background-image: linear-gradient(
             90deg,
             rgba(255, 255, 255, 0.1),
@@ -49,7 +49,7 @@
       }
 
       .hero-tagline {
-        @apply w-[55%] xl:w-[70%] lg:w-4/5 md:w-[92%] sm:w-[96%] mx-auto text-center text-lg lg:text-[17px] sm:text-[15.5px] xs:text-[14px] leading-[34px] lg:leading-[32px] sm:leading-[31px] xs:leading-[28px] text-white/80 mb-10 sm:mb-6;
+        @apply w-[55%] xl:w-[70%] lg:w-4/5 md:w-[92%] sm:w-[96%] mx-auto text-center text-lg lg:text-[17px] sm:text-[15.5px] xs:text-[14px] leading-[34px] lg:leading-[32px] sm:leading-[31px] xs:leading-[26.5px] text-white/80 mb-10 sm:mb-6;
       }
 
       .action-row {
