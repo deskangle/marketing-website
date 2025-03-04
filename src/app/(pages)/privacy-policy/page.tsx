@@ -20,21 +20,21 @@ const PrivacyPolicy = () => {
           {/* BODY CONTAINER */}
           <div className="body-container">
             <div className="paragraph-text">
-              At Deskangle Studios, your privacy is at the heart of what we do.
+              {`  At Deskangle Studios, your privacy is at the heart of what we do.
               We want you to feel confident and secure when sharing your
               information with us. This Privacy Policy explains, in clear and
               simple terms, what personal data we collect, how we use it, and
               the steps we take to protect it. Our goal is transparency,
               ensuring you always know how your data is handled and giving you
-              control over your personal information.
+              control over your personal information.`}
             </div>
 
             {/* ------ */}
             <div className="header-text">1. Information We Collect</div>
 
             <div className="paragraph-text">
-              We collect certain types of personal information when you interact
-              with our website or services, including but not limited to:
+              {` We collect certain types of personal information when you interact
+              with our website or services, including but not limited to:`}
             </div>
 
             <ul className="item-list">
@@ -209,7 +209,7 @@ const PrivacyPolicy = () => {
             <div className="header-text">6. Data Retention</div>
 
             <div className="paragraph-text">
-              We retain your personal data only as long as needed — whether to
+              We retain your personal data only as long as needed, whether to
               provide our services, meet legal requirements, or resolve
               disputes. Once your data is no longer necessary, we securely
               delete or anonymize it.
