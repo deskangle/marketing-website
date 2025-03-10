@@ -19,6 +19,7 @@ export const useAppStore = create<Store>((set, get) => ({
   selectedPeriod: "monthly",
   selectedPricing: {
     type: "Starter",
+    slug: "starter",
     description:
       "Ideal for startups or small businesses looking for ongoing support to keep their digital assets in top shape. This plan ensures your product remains functional, secure, and up-to-date.",
     features: ["One request at a time"],
