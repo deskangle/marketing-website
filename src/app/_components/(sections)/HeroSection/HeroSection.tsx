@@ -61,7 +61,11 @@ const HeroSection = () => {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
           >
-            <Link href="/" className="btn btn-primary-green">
+            <Link
+              href="https://cal.com/deskangle-studios/30min"
+              target="_blank"
+              className="btn btn-primary-green"
+            >
               <div className="btn-text">Book a Discovery Call</div>{" "}
               <div className="btn-icon">
                 <ArrowRightIcon className="w-5 h-5 text-white animate-pulse" />

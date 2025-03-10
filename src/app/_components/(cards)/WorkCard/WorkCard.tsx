@@ -3,6 +3,7 @@
 import React from "react";
 // import { Tilt } from "react-tilt";
 import Image from "next/image";
+import Link from "next/link";
 import { IWorkType } from "@/app/_types";
 import { motion } from "framer-motion";
 import "./WorkCard.scss";
@@ -29,9 +30,13 @@ function WorkCard({ image, brand, description, link }: IWorkType) {
         <div className="title-row">
           <div className="title-text">{brand}</div>
 
-          <button className="btn btn-sm btn-primary-green-outline">
+          <Link
+            href={link as string}
+            target="_blank"
+            className="btn btn-sm btn-primary-green-outline"
+          >
             Visit Site
-          </button>
+          </Link>
         </div>
 
         <div className="description-text">{description}</div>

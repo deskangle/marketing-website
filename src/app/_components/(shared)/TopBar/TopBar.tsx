@@ -67,7 +67,11 @@ const TopBar = () => {
             </Link>
           </nav>
 
-          <Link href="/#pricing" className="btn btn-primary-green nav-item-btn">
+          <Link
+            href="https://cal.com/deskangle-studios/30min"
+            target="_blank"
+            className="btn btn-primary-green nav-item-btn"
+          >
             {`Let's talk`}
           </Link>
 

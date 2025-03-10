@@ -2,7 +2,7 @@
 
 import React from "react";
 import { IPricingType } from "@/app/_types";
-import { getSelectedPlanAmount } from "@/app/_utils";
+import { getSelectedPlanAmount, getPlanBookingLink } from "@/app/_utils";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import "./PricingPlanCard.scss";
@@ -51,7 +51,11 @@ const PricingPlanCard = ({
       </ul>
 
       <div className="plan-action">
-        <Link href="" className="btn btn-primary-green">
+        <Link
+          href={getPlanBookingLink(pricing, selectedPeriod, isLocalCurrency)}
+          target="_blank"
+          className="btn btn-primary-green"
+        >
           <div className="btn-text">Book a slot</div>{" "}
           <div className="btn-icon">
             <ArrowRightIcon className="w-5 h-5 text-white" />

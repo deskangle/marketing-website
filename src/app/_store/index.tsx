@@ -31,6 +31,7 @@ export const useAppStore = create<Store>((set, get) => ({
   pricingList: [
     {
       type: "Launchpad",
+      slug: "launchpad",
       description:
         "Ideal for small businesses to keep your product up-to-date.",
       features: [
@@ -51,6 +52,7 @@ export const useAppStore = create<Store>((set, get) => ({
     },
     {
       type: "Growth Accelerator",
+      slug: "growth-accelerator",
       description:
         "Perfect for scaling businesses and driving continuous growth.",
       features: [
@@ -71,6 +73,7 @@ export const useAppStore = create<Store>((set, get) => ({
     },
     {
       type: "Strategic Partner",
+      slug: "strategic-partner",
       description:
         "Designed for industry leaders, offering an end to end support.",
       features: [

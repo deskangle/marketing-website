@@ -46,7 +46,11 @@ const ProcessCard = ({
             ))}
           </div>
         ) : (
-          <Link href="/#pricing" className="btn btn-secondary">
+          <Link
+            href="https://cal.com/deskangle-studios/30min"
+            target="_blank"
+            className="btn btn-secondary"
+          >
             <div className="btn-text">Book a Discovery Call</div>{" "}
             <div className="btn-icon">
               <ArrowRightIcon className="w-5 h-5 text-white" />

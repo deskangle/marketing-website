@@ -43,6 +43,7 @@ export interface IAmountType {
 
 export interface IPricingType {
   type: string;
+  slug: string;
   description: string;
   features: string[];
   isSelected: boolean;

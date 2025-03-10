@@ -36,7 +36,8 @@ const Footer = () => {
             {/* ACTION BUTTON ROW */}
             <div className="action-btn-row">
               <Link
-                href="/"
+                href="https://cal.com/deskangle-studios/30min"
+                target="_blank"
                 className="btn btn-primary-green-outline nav-item-btn"
               >
                 Book a discovery call

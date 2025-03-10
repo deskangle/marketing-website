@@ -56,7 +56,7 @@ const WorkSection = () => {
       brand: "Golden Penny Festival",
       description:
         "The Golden Penny Soup Festival is a themed event that invites food enthusiasts to a celebration of soups with culinary master classes and vendor opportunities.",
-      link: "https://pavehq.com",
+      link: "https://gpsoupfestival.com/",
     },
   ];
 

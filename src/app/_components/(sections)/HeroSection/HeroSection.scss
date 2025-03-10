@@ -64,7 +64,7 @@
         }
 
         .project-stat-card {
-          @apply relative w-max h-[64px] rounded-full border border-primary-green/35 flex justify-between items-center gap-x-1 pl-4 pr-9 bg-black-drop;
+          @apply relative w-max h-[64px] rounded-full border border-primary-green/25 flex justify-between items-center gap-x-1 pl-4 pr-9 bg-black-drop;
 
           .people-row {
             @apply flex justify-start items-center;
