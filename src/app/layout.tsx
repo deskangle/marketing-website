@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Source_Sans_3, Open_Sans } from "next/font/google";
 import { BaseLayout } from "@/app/_components";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.scss";
 
 const sourceSans = Source_Sans_3({
@@ -25,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-CXRTEPR460" />
       <body className={openSans.className}>
         <BaseLayout>{children}</BaseLayout>
       </body>
