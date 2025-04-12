@@ -68,10 +68,12 @@ const TopBar = () => {
           </nav>
 
           <Link
-            href="https://cal.com/deskangle-studios/30min"
+            href="https://wa.link/v5g50k"
             target="_blank"
             className="btn btn-primary-green nav-item-btn"
           >
+            {" "}
+            <div className="icon icon-whatsapp mr-2 text-lg"></div>
             {`Let's talk`}
           </Link>
 

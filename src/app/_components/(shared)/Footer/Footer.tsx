@@ -78,25 +78,34 @@ const Footer = () => {
                 <div className="link-header">Socials</div>
 
                 <div className="nav-item-list">
-                  <Link href="#" className="nav-item nav-item-flex">
+                  <Link
+                    href="https://x.com/DeskAngle"
+                    className="nav-item nav-item-flex"
+                  >
                     <div className="icon icon-twitter-x"></div>
                     <div>Twitter</div>
                   </Link>
 
-                  <Link href="#" className="nav-item nav-item-flex">
+                  <Link
+                    href="https://instagram.com/deskangle"
+                    className="nav-item nav-item-flex"
+                  >
                     <div className="icon icon-instagram"></div>
                     <div>Instagram</div>
                   </Link>
 
-                  <Link href="#" className="nav-item nav-item-flex">
+                  <Link
+                    href="https://www.linkedin.com/company/deskangle/"
+                    className="nav-item nav-item-flex"
+                  >
                     <div className="icon icon-linkedin"></div>
                     <div>LinkedIn</div>
                   </Link>
 
-                  <Link href="#" className="nav-item nav-item-flex">
+                  {/* <Link href="#" className="nav-item nav-item-flex">
                     <div className="icon icon-youtube"></div>
                     <div>Youtube</div>
-                  </Link>
+                  </Link> */}
 
                   {/* <Link href="#" className="nav-item nav-item-flex">
                     <div className="icon icon-youtube"></div>
@@ -110,15 +119,15 @@ const Footer = () => {
 
                 <div className="nav-item-list">
                   <Link
-                    href="tel:+2348058130913"
+                    href="tel:+2348131177703"
                     className="nav-item nav-item-flex"
                   >
                     <PhoneIcon className="w-[17px] h-[17px]" />
-                    <div>+(234)-80-5813-0913</div>
+                    <div>+(234)-81-3117-7703</div>
                   </Link>
 
                   <Link
-                    href="tel:+2348058130913"
+                    href="https://wa.link/v5g50k"
                     className="nav-item nav-item-flex"
                   >
                     <div className="icon icon-whatsapp"></div>
