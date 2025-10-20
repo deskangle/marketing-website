@@ -45,7 +45,7 @@ const testimonialDataset = [
     isVideo: false,
   },
   {
-    name: "Gerrald Peters",
+    name: "Gerald Iloegbunam,",
     role: "Senior Technical Lead, Trac",
     quote:
       "Choosing the right SaaS tech stack can be overwhelming due to too many options available. Deskangle's consultation was a game-changer. They listened, helped us decide on the right strategy, and now we're making more revenue. Book a consultation with them!",
